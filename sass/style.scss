@@ -76,7 +76,7 @@ body {
     }
     &__sublist {
         background-color: $sublistBgColor;
-        margin-top: 5px;
+        // margin-top: 5px;
         width: 180px;
         height: 150px;
         border: 1px solid $sublistBorderColor;
@@ -87,6 +87,19 @@ body {
         align-items: flex-start;
         justify-content: space-evenly;
         display: none;
+        position: relative;
+        &::before {
+            content: '';
+            width: 0; 
+            height: 0; 
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid $sublistBorderColor;
+            position: absolute;
+            top:-4%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
     &__subitem {
         width: 80%;

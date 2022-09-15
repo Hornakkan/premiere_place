@@ -76,7 +76,6 @@ body {
 }
 .nav-content__sublist {
   background-color: rgba(255, 255, 255, 0.9490196078);
-  margin-top: 5px;
   width: 180px;
   height: 150px;
   border: 1px solid lightgrey;
@@ -87,6 +86,19 @@ body {
   align-items: flex-start;
   justify-content: space-evenly;
   display: none;
+  position: relative;
+}
+.nav-content__sublist::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid lightgrey;
+  position: absolute;
+  top: -4%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .nav-content__subitem {
   width: 80%;
