@@ -1,0 +1,19 @@
+{
+  "name": "premiere_place",
+  "version": "1.0.0",
+  "description": "PP - Test technique",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./style/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hornakkan/premiere_place.git"
+  },
+  "author": "Hornakkan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hornakkan/premiere_place/issues"
+  },
+  "homepage": "https://github.com/Hornakkan/premiere_place#readme"
+}
