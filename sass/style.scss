@@ -45,8 +45,11 @@ body {
     align-items: baseline;
     justify-content: space-evenly;
     position: relative;
+    &:first-child {
+        color: $navTextHover;
+        font-weight: 500;
+    }
     &__item {
-        height: 100%;
         width: 80px;
         margin: 0 20px;
         cursor: pointer;
@@ -55,15 +58,10 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        & > span {
-            display: none;
-            flex-direction: column;
-            align-items: center;
-        }
         &__bullet {
             display: block;
             width: 20px;
-            height: 5px;
+            height: 6px;
             margin: 10px 0;
             border-radius: 25px;
             background-color: $pink;
@@ -71,7 +69,7 @@ body {
         &:hover {
             color: $navTextHover;
             font-weight: 500;
-            & > span {
+            & > ul {
                 display: flex;
             }
         }
@@ -88,7 +86,7 @@ body {
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-evenly;
-        display: flex;
+        display: none;
         position: relative;
         &::before {
             content: '';
@@ -106,11 +104,8 @@ body {
     &__subitem {
         width: 80%;
         margin: 0 auto;
-        padding: 5px 0;
+        padding: 15px 0;
         font-size: 0.85em;
-        &:first-child {
-            padding-top: 15px;
-        }
         &:not(:last-child) {
             border-bottom: 1px solid $sublistBorderColor;
         }
