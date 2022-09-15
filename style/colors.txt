@@ -1,0 +1,68 @@
+Bleu : #1B5292
+Rose : #F18B87
+Noir : #000000
+Blanc : #FFFFFF
+
+** navbar :
+active text : #1B5292, opa 100%
+inactive text : #1B5292, opa 70%
+underline : #F18B87
+* hover menu
+fleche up : #F6F6F6, opa 95%
+borders : #FFFFFF, opa 95%
+texte : #1B5292
+
+----------------------------------------------
+
+** home : 
+* En savoir plus :
+texte + fond : #2D5F98
+fond blanc : #FFFFFF, opa 95%
+fond bleu : #2D5F98, opa 50%
+
+* fleches caroussel :
+bg : #EEEEEE
+arrow : #1B5292, opa 90%
+
+* bulles caroussel :
+inactive fond : #FFFFFF, opa 50%
+active fond : #F18B87
+borders : #FFFFFF
+
+----------------------------------------------
+
+** actualités : 
+date : #000000, opa 50%
+titre : #1B5292
+titre article : #1B5292
+texte article : #000000
+lire plus : #F18B87
+bouton "voir tous les articles" : #1B5292 (texte #FFFFFF)
+fond bleu logo PP : #E9EEF4
+
+----------------------------------------------
+
+** prochains rdv :
+calendrier : #F18B87
+date : #1B5292
+titre : #1B5292
+texte : #000000
+savoir plus : #1B5292, opa 80%
+borders : #1B5292
+s'inscrire : #F18B87
+bouton voir agenda : #1B5292 (texte #FFFFFF)
+
+----------------------------------------------
+
+** titre h2 : 
+filtre bg : #F6F6F6
+
+----------------------------------------------
+
+** footer : 
+texte PP : #000000, opa 80%
+menu liens : #1B5292
+slogan : #000000, opa 80%
+texte seo : #000000, opa 80%
+copyright : #000000, opa 80%
+copyright bg : #F6F6F6
