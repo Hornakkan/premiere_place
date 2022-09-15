@@ -54,12 +54,17 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center; 
-        &__bullet {
+        align-items: center;
+        & > span {
             display: none;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__bullet {
+            display: block;
             width: 20px;
             height: 5px;
-            margin: 5px 0;
+            margin: 10px 0;
             border-radius: 25px;
             background-color: $pink;
         }
@@ -67,18 +72,15 @@ body {
             color: $navTextHover;
             font-weight: 500;
             & > span {
-                display: block;
-            }
-            & > ul {
                 display: flex;
             }
         }
     }
     &__sublist {
         background-color: $sublistBgColor;
-        // margin-top: 5px;
+        margin-top: 2px;
         width: 180px;
-        height: 150px;
+        height: 200px;
         border: 1px solid $sublistBorderColor;
         border-radius: 20px;
         font-weight: 400;
@@ -86,7 +88,7 @@ body {
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-evenly;
-        display: none;
+        display: flex;
         position: relative;
         &::before {
             content: '';
@@ -96,7 +98,7 @@ body {
             border-right: 5px solid transparent;
             border-bottom: 5px solid $sublistBorderColor;
             position: absolute;
-            top:-4%;
+            top:-3%;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -131,6 +133,7 @@ body {
         font-size: 0.9em;
         &__tel {
             cursor: pointer;
+            font-weight: 600;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -141,6 +144,7 @@ body {
             background-color: lighten($navContactBgColor, 5%);
             &__hours {
                 font-size: 0.6em;
+                font-weight: 400;
             }
         }
         &__logo {
@@ -153,6 +157,7 @@ body {
             width: 50%;
             display: flex;
             justify-content: center;
+            font-weight: 600;
         }
     }
 }
