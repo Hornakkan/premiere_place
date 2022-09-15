@@ -1,0 +1,143 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    &__logo {
+        margin: 25px 150px;
+    }
+}
+
+.nav-wrapper {
+    background-image: url(../ressources/fond-nav.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    position: relative;
+    width: 60%;
+    height: 10em;
+}
+
+.nav-content {
+    width: 80%;
+    height: 50px;
+    font-size: 1em;
+    color: $navTextColor;
+    font-weight: 400;
+    margin-top: 5%;
+    margin-left: 10%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    position: relative;
+    &:first-child {
+        color: $navTextHover;
+        font-weight: 500;
+    }
+    &__item {
+        width: 80px;
+        margin: 0 20px;
+        cursor: pointer;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__bullet {
+            display: block;
+            width: 20px;
+            height: 6px;
+            margin: 10px 0;
+            border-radius: 25px;
+            background-color: $pink;
+        }
+        &:hover {
+            color: $navTextHover;
+            font-weight: 500;
+            & > ul {
+                display: flex;
+            }
+        }
+    }
+    &__sublist {
+        background-color: $sublistBgColor;
+        margin-top: 2px;
+        width: 180px;
+        height: 200px;
+        border: 1px solid $sublistBorderColor;
+        border-radius: 20px;
+        font-weight: 400;
+        color: $navTextColor;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        display: none;
+        position: relative;
+        &::before {
+            content: '';
+            width: 0; 
+            height: 0; 
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid $sublistBorderColor;
+            position: absolute;
+            top:-3%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subitem {
+        width: 80%;
+        margin: 0 auto;
+        padding: 15px 0;
+        font-size: 0.85em;
+        &:not(:last-child) {
+            border-bottom: 1px solid $sublistBorderColor;
+        }
+        &:hover {
+            color: $subitemHoverTextColor;
+        }
+    }
+    &__contact {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-shrink: 0;
+        margin: auto 0;
+        position: relative;
+        background-color: $navContactBgColor;        
+        width: 330px;
+        height: 50px;
+        border-radius: $navContactRadius;
+        color: $navContactTextColor;
+        font-size: 0.9em;
+        &__tel {
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            height: 100%;
+            border-radius: $navContactRadius 0 0 $navContactRadius;
+            background-color: lighten($navContactBgColor, 5%);
+            &__hours {
+                font-size: 0.6em;
+                font-weight: 400;
+            }
+        }
+        &__logo {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &__mail {
+            cursor: pointer;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            font-weight: 600;
+        }
+    }
+}
