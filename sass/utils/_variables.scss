@@ -33,6 +33,7 @@ $contactHeight: 50px;
 // sublist
 $sublistBgColor: #fffffff2;
 $sublistBorderColor: lightgrey;
+$sublistUnderlineColor: #d3d3d359;
 $subitemHoverTextColor: $pink;
 
 $sublistWidth: 180px; 
@@ -43,9 +44,11 @@ $sublistBorder: 1px solid $sublistBorderColor;
 // sublist - products
 $sublistProductsBgColor: #fffffff2;
 $sublistFooterBgColor: #d3d3d323;
+$sublistProductsItemHoverColor: $pink;
 $sublistFooterTextColor: $black;
 $sublistFooterTitleWeight: 600;
 $sublistFooterTextWeight: 300;
 $sublistProductsWidth: 500px;
 $sublistProductsPadding: 10px;
+$sublistProductsMargin: 10px;
 $sublistProductsFontSize: 0.85em;
