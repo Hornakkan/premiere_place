@@ -20,3 +20,24 @@
     bottom: 0;
     padding-bottom: 150px;
 }
+
+.carousel-control-prev {
+    left: 10%;
+    bottom: 15%;
+    top: auto;
+}
+.carousel-control-next {
+    left: 12%;
+    bottom: 15%;
+    top: auto;
+}
+.carousel-indicators {
+    left: 8%;
+    bottom: 12%;
+    width: fit-content;
+    & > li {
+        border-radius: $carouselIndicatorsRadius;
+        width: $carouselIndicatorsWidth;
+        height: $carouselIndicatorsHeight;
+    }
+}
