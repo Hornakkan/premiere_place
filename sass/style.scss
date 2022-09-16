@@ -1,5 +1,6 @@
 @import "./utils/variables";
 @import "./components/nav";
+@import "./components/carousel";
 
 *, ::before, ::after {
     margin: 0;
@@ -13,4 +14,5 @@ body {
     font-family: $fontFamily;
     background-image: url(../ressources/cigogne.jpg);
     background-repeat: no-repeat;
+    width: 100vw;
 }

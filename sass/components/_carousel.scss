@@ -1,0 +1,22 @@
+.carousel {
+    height: $carouselHeight;
+}
+
+.carousel-item {
+    height: 100%;
+    background: $carouselBgColor;
+    color: $carouselTextColor;
+    position: relative;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 150px;
+}

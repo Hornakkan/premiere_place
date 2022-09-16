@@ -13,73 +13,147 @@
 </head>
 <body>
 
-    <header class="header">
-        <div class="header__logo">
-            <img src="./ressources/logo.png" alt="website logo">
+    <section class="home">    
+        <header class="header">
+            <div class="header__logo">
+                <img src="./ressources/logo.png" alt="website logo">
+            </div>
+            <nav class="nav-wrapper">
+                <ul class="nav-content">
+                    <li class="nav-content__item active-item">
+                        A propos
+                            <span class="nav-content__item__bullet"></span>
+                            <ul class="nav-content__sublist">
+                                <li class="nav-content__subitem">La société</li>
+                                <li class="nav-content__subitem">L'histoire</li>
+                                <li class="nav-content__subitem">Les valeurs</li>
+                                <li class="nav-content__subitem">L'équipe</li>
+                            </ul>
+                    </li>
+                    <li class="nav-content__item">Services</li>
+                    <li class="nav-content__item">
+                        Produits
+                        <span class="nav-content__item__bullet inactive"></span>
+                        <ul class="nav-content__sublist products">
+                            <li class="nav-content__sublist__title">Nos gammes</li>
+                            <li class="nav-content__sublist__section">
+                                <ul class="nav-content__sublist__section__list">
+                                    <li class="nav-content__sublist__section__list__item">Post emensos</li>
+                                    <li class="nav-content__sublist__section__list__item">insuperabilis</li>
+                                    <li class="nav-content__sublist__section__list__item">expeditionis</li>
+                                    <li class="nav-content__sublist__section__list__item">languentibus</li>
+                                </ul>
+                                <ul class="nav-content__sublist__section__list">
+                                    <li class="nav-content__sublist__section__list__item">Caesaris Galli</li>
+                                    <li class="nav-content__sublist__section__list__item">Ulmen Insperato</li>
+                                    <li class="nav-content__sublist__section__list__item">Ausurus hostilia</li>
+                                    <li class="nav-content__sublist__section__list__item">Altera sententia</li>
+                                </ul>
+                                <ul class="nav-content__sublist__section__list">
+                                    <li class="nav-content__sublist__section__list__item">Proinde concepta</li>
+                                    <li class="nav-content__sublist__section__list__item">Castricius tresque</li>
+                                    <li class="nav-content__sublist__section__list__item">Nondum</li>
+                                    <li class="nav-content__sublist__section__list__item">Opinantibus</li>
+                                </ul>
+                            </li>
+                            <li class="nav-content__sublist__footer">
+                                <span class="nav-content__sublist__footer__title">Informations</span>
+                                <p class="nav-content__sublist__footer__text">
+                                    Eius populus ab incunabulis primis ad usque pueritiae tempus
+                                    extremum, quod annis circumcluditur
+                                </p>
+                            </li>
+                        </ul>                  
+                    </li>
+                    <li class="nav-content__item">Actualités</li>
+                    <li class="nav-content__contact">
+                        <span class="nav-content__contact__tel">
+                            <p class="nav-content__contact__tel__call">Appelez-nous</p>
+                            <p class="nav-content__contact__tel__hours">24h/24 - 7j/4</p>
+                        </span>
+                        <span class="nav-content__contact__logo">
+                            <img src="./ressources/contact_icon.png" alt="contact icon">
+                        </span>
+                        <span class="nav-content__contact__mail">
+                            <p class="nav-content__contact__mail__text">Contactez-nous</p>
+                        </span>
+                    </li>
+                </ul>
+            </nav>        
+        </header>
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <h1>Example headline 1</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Obcaecati totam omnis in ipsum, illo facilis similique corrupti error debitis sunt?
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary">
+                            Sign up today
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <h1>Example headline 2</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Obcaecati totam omnis in ipsum, illo facilis similique corrupti error debitis sunt?
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary">
+                            Sign up today
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <h1>Example headline 3</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Obcaecati totam omnis in ipsum, illo facilis similique corrupti error debitis sunt?
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary">
+                            Sign up today
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <h1>Example headline 4</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Obcaecati totam omnis in ipsum, illo facilis similique corrupti error debitis sunt?
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary">
+                            Sign up today
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#myCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="sr-only">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a href="#myCarousel" class="carousel-control-next" role="button" data-slide="next">
+                <span class="sr-only">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
         </div>
-        <nav class="nav-wrapper">
-            <ul class="nav-content">
-                <li class="nav-content__item active">
-                    A propos
-                        <span class="nav-content__item__bullet"></span>
-                        <ul class="nav-content__sublist">
-                            <li class="nav-content__subitem">La société</li>
-                            <li class="nav-content__subitem">L'histoire</li>
-                            <li class="nav-content__subitem">Les valeurs</li>
-                            <li class="nav-content__subitem">L'équipe</li>
-                        </ul>
-                </li>
-                <li class="nav-content__item">Services</li>
-                <li class="nav-content__item">
-                    Produits
-                    <span class="nav-content__item__bullet inactive"></span>
-                    <ul class="nav-content__sublist products">
-                        <li class="nav-content__sublist__title">Nos gammes</li>
-                        <li class="nav-content__sublist__section">
-                            <ul class="nav-content__sublist__section__list">
-                                <li class="nav-content__sublist__section__list__item">Post emensos</li>
-                                <li class="nav-content__sublist__section__list__item">insuperabilis</li>
-                                <li class="nav-content__sublist__section__list__item">expeditionis</li>
-                                <li class="nav-content__sublist__section__list__item">languentibus</li>
-                            </ul>
-                            <ul class="nav-content__sublist__section__list">
-                                <li class="nav-content__sublist__section__list__item">Caesaris Galli</li>
-                                <li class="nav-content__sublist__section__list__item">Ulmen Insperato</li>
-                                <li class="nav-content__sublist__section__list__item">Ausurus hostilia</li>
-                                <li class="nav-content__sublist__section__list__item">Altera sententia</li>
-                            </ul>
-                            <ul class="nav-content__sublist__section__list">
-                                <li class="nav-content__sublist__section__list__item">Proinde concepta</li>
-                                <li class="nav-content__sublist__section__list__item">Castricius tresque</li>
-                                <li class="nav-content__sublist__section__list__item">Nondum</li>
-                                <li class="nav-content__sublist__section__list__item">Opinantibus</li>
-                            </ul>
-                        </li>
-                        <li class="nav-content__sublist__footer">
-                            <span class="nav-content__sublist__footer__title">Informations</span>
-                            <p class="nav-content__sublist__footer__text">
-                                Eius populus ab incunabulis primis ad usque pueritiae tempus
-                                extremum, quod annis circumcluditur
-                            </p>
-                        </li>
-                    </ul>                  
-                </li>
-                <li class="nav-content__item">Actualités</li>
-                <li class="nav-content__contact">
-                    <span class="nav-content__contact__tel">
-                        <p class="nav-content__contact__tel__call">Appelez-nous</p>
-                        <p class="nav-content__contact__tel__hours">24h/24 - 7j/4</p>
-                    </span>
-                    <span class="nav-content__contact__logo">
-                        <img src="./ressources/contact_icon.png" alt="contact icon">
-                    </span>
-                    <span class="nav-content__contact__mail">
-                        <p class="nav-content__contact__mail__text">Contactez-nous</p>
-                    </span>
-                </li>
-            </ul>
-        </nav>        
-    </header>
+    </section>
+    
+    <section class="services">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, voluptas magni consequuntur suscipit maxime porro excepturi minus, beatae officia maiores illum quas reprehenderit. Excepturi voluptatibus quam iure dolorem est, voluptate ullam suscipit necessitatibus deserunt. Voluptatibus maxime, expedita magni iste possimus eveniet placeat voluptatem aperiam explicabo provident quasi totam quidem tempore dolorem est ipsa cumque natus deserunt veritatis ullam corrupti delectus vel. Ab ea, aut quos libero sit odit maiores officiis ipsum sapiente atque ut deserunt iure blanditiis rerum eligendi alias aperiam commodi neque delectus quaerat? Sed, accusantium error molestias quam, corrupti doloremque officia voluptatem nisi eveniet temporibus praesentium voluptate unde in. Recusandae harum sequi doloribus consequatur deserunt non necessitatibus molestias quia odio? Nesciunt molestiae explicabo eum enim dolorum nobis dicta nihil quasi labore, possimus totam, quis odit vero! Cumque, doloribus delectus dolores culpa reiciendis velit at nihil temporibus laboriosam, id corporis quibusdam corrupti excepturi ab eos omnis provident quaerat non! Sapiente perferendis voluptates soluta necessitatibus, illum totam quod voluptate fugit eos voluptatem illo quo distinctio est hic esse a recusandae impedit. Laborum ipsa doloremque ut tenetur quos reiciendis quae dicta asperiores! Dignissimos, nam mollitia voluptatum eius molestiae quam voluptatem eveniet quod id asperiores impedit a facilis cum accusantium quidem. Sit impedit itaque voluptatibus debitis delectus ut quas nulla minus quae ipsum voluptas velit eum, qui obcaecati aperiam ad perspiciatis et, ratione repudiandae cupiditate! Ipsum consequatur debitis, nobis laborum voluptate non dicta qui. Iure veritatis ratione odit maiores odio minima distinctio ipsam accusantium dolore, exercitationem amet fuga. Esse doloremque facere iste saepe iure, odio, sequi eveniet quis voluptates eius commodi nam reprehenderit, neque minima laborum alias tenetur deleniti repudiandae ullam. Eveniet consequuntur modi consectetur quo mollitia illo iusto cum quod reprehenderit labore facere voluptatibus, vero dolorum voluptates quisquam veritatis, facilis animi, iste neque dicta officiis maxime enim debitis assumenda. Laborum, culpa! Voluptatum modi similique autem necessitatibus voluptatibus amet sit eligendi minima labore sint, odit iusto fugiat porro delectus fuga nulla accusantium, quibusdam nostrum ipsa eius ab dolorem tempora tenetur. Eaque delectus voluptatum, id odit, saepe quos, ea incidunt tempore enim in sunt fugit ullam voluptates ipsa fugiat accusamus a quas perferendis eveniet! Aliquam dignissimos, rem assumenda laudantium et esse quibusdam architecto maiores consequuntur! Quas distinctio nostrum, ab voluptas ipsam cum, similique quos adipisci ullam beatae esse officia fugit ducimus a iusto aperiam sit culpa! Dolore ducimus nobis, dignissimos quidem sequi ratione culpa. Debitis enim sapiente praesentium minus qui nam odit quo culpa voluptate laborum corporis cum quos dicta accusamus incidunt, totam fugit doloribus, consectetur sint tempore sit ad explicabo. Incidunt aspernatur, non provident voluptatem debitis magni consequatur sequi, cumque assumenda deserunt nesciunt itaque, recusandae ea ex? Culpa, voluptate assumenda nesciunt et eveniet quo. Maxime numquam facere praesentium asperiores voluptatibus eum quia rerum sit porro. Libero, veritatis quae. Cum debitis maiores eligendi reprehenderit dolores provident quisquam sed, minima beatae, quidem asperiores? Similique facere rerum et odio mollitia voluptates ducimus! Mollitia praesentium consectetur laboriosam, officiis esse dolorem magnam, voluptatibus blanditiis illum quisquam illo ab earum expedita modi beatae quod eligendi delectus ducimus ad!
+    </section>
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
