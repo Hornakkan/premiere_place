@@ -255,8 +255,13 @@
 }
 .carousel-indicators > li {
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  border: 2px solid #FFFFFF;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.carousel-indicators > li.active {
+  background-color: #F18B87;
 }
 
 .container {
@@ -265,6 +270,19 @@
   right: 0;
   bottom: 0;
   padding-bottom: 150px;
+}
+.container .btn {
+  background-color: rgba(255, 255, 255, 0.9490196078);
+  border-radius: 25px;
+  color: #1b5393;
+  font-size: 0.85em;
+  font-weight: 600;
+  width: 150px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
 }
 
 *, ::before, ::after {

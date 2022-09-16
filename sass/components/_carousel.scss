@@ -29,8 +29,13 @@
         width: fit-content;
         & > li {
             border-radius: $carouselIndicatorsRadius;
+            border: $carouselIndicatorsBorder;
             width: $carouselIndicatorsWidth;
             height: $carouselIndicatorsHeight;
+            cursor: pointer;
+            &.active {
+                background-color: $carouselIndicatorsActiveColor;
+            }
         }
     }    
 }
@@ -41,4 +46,17 @@
     right: 0;
     bottom: 0;
     padding-bottom: 150px;
+    & .btn {
+        background-color: $carouselButtonBgColor;
+        border-radius: $carouselButtonRadius;
+        color: $carouselButtonTextColor;
+        font-size: $carouselButtonFontSize;
+        font-weight: $carouselButtonFontWeight;
+        width: $carouselButtonWidth;
+        height: $carouselButtonHeight;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: $carouselButtonBorder;
+    }
 }
