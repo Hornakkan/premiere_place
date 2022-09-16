@@ -3,15 +3,49 @@
 $fontFamily: 'Open Sans';
 $pink: #F18B87;
 $blue: #1b5393;
+$white: #FFFFFF;
+$black: #000000;
 
 $bgColor: #333;
-$navBgColor: #FFFFFF;
-$navTextColor: #1b5393cc;
+
+// navbar
+$navBgColor: $white;
+$navTextColor: #1b5393a6;
 $navTextHover: $blue;
-$navContactBgColor: #F18B87;
-$navContactTextColor: #FFFFFF;
+$navBulletBgColor: $pink;
+$navBulletHoverColor: #f18a872c;
+$navContactBgColor: $pink;
+$navContactTextColor: $white;
+
+$navBulletRadius: 25px;
+$navBulletWidth: 20px;
+$navBulletHeight: 6px;
+$navBulletMargin: 10px 0;
+$navContactRadius: 25px;
+$navItemwidth: 80px;
+$navItemFontWeight: 600;
+$navItemMargin: 0 20px;
+
+// navbar - contact
+$contactWidth: 330px;
+$contactHeight: 50px;
+
+// sublist
 $sublistBgColor: #fffffff2;
 $sublistBorderColor: lightgrey;
 $subitemHoverTextColor: $pink;
 
-$navContactRadius: 25px;
+$sublistWidth: 180px; 
+$sublistHeight: 200px;
+$sublistRadius: 20px;
+$sublistBorder: 1px solid $sublistBorderColor;
+
+// sublist - products
+$sublistProductsBgColor: #fffffff2;
+$sublistFooterBgColor: #d3d3d323;
+$sublistFooterTextColor: $black;
+$sublistFooterTitleWeight: 600;
+$sublistFooterTextWeight: 300;
+$sublistProductsWidth: 500px;
+$sublistProductsPadding: 10px;
+$sublistProductsFontSize: 0.85em;

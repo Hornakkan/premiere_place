@@ -30,30 +30,37 @@
     align-items: baseline;
     justify-content: space-evenly;
     position: relative;
-    &:first-child {
-        color: $navTextHover;
-        font-weight: 500;
-    }
     &__item {
-        width: 80px;
-        margin: 0 20px;
+        width: $navItemwidth;
+        margin: $navItemMargin;
+        font-weight: $navItemFontWeight;
+        color: $navTextColor;
         cursor: pointer;
         flex-shrink: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        &.active {
+            color: $navTextHover;
+        }
         &__bullet {
             display: block;
-            width: 20px;
-            height: 6px;
-            margin: 10px 0;
-            border-radius: 25px;
-            background-color: $pink;
+            width: $navBulletWidth;
+            height: $navBulletHeight;
+            margin: $navBulletMargin;
+            border-radius: $navBulletRadius;
+            background-color: $navBulletBgColor;
+            &.inactive {
+                background-color: $navBulletHoverColor;
+                display: none;
+            }
         }
         &:hover {
             color: $navTextHover;
-            font-weight: 500;
+            & > span {
+                display: block;
+            }
             & > ul {
                 display: flex;
             }
@@ -62,16 +69,17 @@
     &__sublist {
         background-color: $sublistBgColor;
         margin-top: 2px;
-        width: 180px;
-        height: 200px;
-        border: 1px solid $sublistBorderColor;
-        border-radius: 20px;
+        width: $sublistWidth;
+        height: $sublistHeight;
+        border: $sublistBorder;
+        border-radius: $sublistRadius;
         font-weight: 400;
         color: $navTextColor;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-evenly;
-        display: none;
+        // display: none;
+        display: flex;
         position: relative;
         &::before {
             content: '';
@@ -84,6 +92,63 @@
             top:-3%;
             left: 50%;
             transform: translateX(-50%);
+        }
+        &.products {
+            width: $sublistProductsWidth;
+            transform: translateX(-60px);
+            justify-content: flex-start;
+            // padding: $sublistProductsPadding;
+            height: auto;
+            font-size: $sublistProductsFontSize;
+            background-color: $sublistProductsBgColor;
+            &::before {
+                content: '';
+                width: 0; 
+                height: 0; 
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-bottom: 5px solid $sublistBorderColor;
+                position: absolute;
+                top:-3%;
+                left: 62%;
+                transform: translateX(-50%);
+            }            
+        }
+        &__title {
+            padding: calc($sublistProductsPadding * 2) calc($sublistProductsPadding * 2) 0 calc($sublistProductsPadding * 2);
+            width: 100%;
+            color: $navTextHover;
+            font-weight: $sublistFooterTitleWeight;
+        }
+        &__section {
+            display: flex;
+            flex-direction: row;
+            margin: 20px 0;
+            padding: 0 calc($sublistProductsPadding * 2);
+            width: 100%;
+            height: 125px;
+            justify-content: space-between;
+            &__list {
+                display: inherit;
+                flex-direction: column;
+                justify-content: space-evenly;
+                &__item {
+    
+                }
+            }
+        }        
+        &__footer {
+            background-color: $sublistFooterBgColor;
+            border-radius: 0 0 $sublistRadius $sublistRadius;
+            padding: 0 calc($sublistProductsPadding * 2) calc($sublistProductsPadding * 2) calc($sublistProductsPadding * 2);
+            &__title {
+                color: $sublistFooterTextColor;
+                font-weight: $sublistFooterTitleWeight;
+            }
+            &__text {
+                color: $sublistFooterTextColor;
+                font-weight: $sublistFooterTextWeight;
+            }
         }
     }
     &__subitem {
@@ -106,8 +171,8 @@
         margin: auto 0;
         position: relative;
         background-color: $navContactBgColor;        
-        width: 330px;
-        height: 50px;
+        width: $contactWidth;
+        height: $contactHeight;
         border-radius: $navContactRadius;
         color: $navContactTextColor;
         font-size: 0.9em;
