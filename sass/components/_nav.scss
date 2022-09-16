@@ -147,7 +147,7 @@
         &__footer {
             background-color: $sublistFooterBgColor;
             border-radius: 0 0 $sublistRadius $sublistRadius;
-            padding: 0 calc($sublistProductsPadding * 2) calc($sublistProductsPadding * 2) calc($sublistProductsPadding * 2);
+            padding: calc($sublistProductsPadding * 2);
             &__title {
                 color: $sublistFooterTextColor;
                 font-weight: $sublistFooterTitleWeight;
@@ -195,7 +195,11 @@
             height: 100%;
             border-radius: $navContactRadius 0 0 $navContactRadius;
             background-color: lighten($navContactBgColor, 5%);
+            &__call {
+                margin: 0;
+            }
             &__hours {
+                margin: 0;
                 font-size: 0.6em;
                 font-weight: 400;
             }
@@ -206,11 +210,17 @@
             transform: translateX(-50%);
         }
         &__mail {
+            margin: 0;
             cursor: pointer;
             width: 50%;
+            height: 100%;
             display: flex;
             justify-content: center;
+            align-items: center;
             font-weight: 600;
+            &__text {
+                margin: 0;   
+            }
         }
     }
 }

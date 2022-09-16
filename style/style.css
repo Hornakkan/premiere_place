@@ -137,7 +137,7 @@
 }
 .nav-content__sublist__section__list__item:not(:last-child) {
   padding-bottom: 5px;
-  border-bottom: 1px solid rgba(211, 211, 211, 0.3490196078);
+  border-bottom: 1px solid rgba(211, 211, 211, 0.2274509804);
 }
 .nav-content__sublist__section__list__item:hover {
   color: #F18B87;
@@ -146,7 +146,7 @@
 .nav-content__sublist__footer {
   background-color: rgba(211, 211, 211, 0.137254902);
   border-radius: 0 0 20px 20px;
-  padding: 0 20px 20px 20px;
+  padding: 20px;
 }
 .nav-content__sublist__footer__title {
   color: #000000;
@@ -163,7 +163,7 @@
   font-size: 0.85em;
 }
 .nav-content__subitem:not(:last-child) {
-  border-bottom: 1px solid rgba(211, 211, 211, 0.3490196078);
+  border-bottom: 1px solid rgba(211, 211, 211, 0.2274509804);
 }
 .nav-content__subitem:hover {
   color: #F18B87;
@@ -195,7 +195,11 @@
   border-radius: 25px 0 0 25px;
   background-color: #f4a19e;
 }
+.nav-content__contact__tel__call {
+  margin: 0;
+}
 .nav-content__contact__tel__hours {
+  margin: 0;
   font-size: 0.6em;
   font-weight: 400;
 }
@@ -205,11 +209,17 @@
   transform: translateX(-50%);
 }
 .nav-content__contact__mail {
+  margin: 0;
   cursor: pointer;
   width: 50%;
+  height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   font-weight: 600;
+}
+.nav-content__contact__mail__text {
+  margin: 0;
 }
 
 *, ::before, ::after {
