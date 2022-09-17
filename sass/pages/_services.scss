@@ -27,24 +27,105 @@
                     height: $servicesContainerLeftWrapperHeight;
                     border-radius: $servicesContainerLeftWrapperRadius;
                     background-color: $servicesContainerLeftWrapperContentBgColor;
+                    padding: $servicesContainerLeftWrapperContentPadding;
                 }
+            }
+            &__title {
+                color: $servicesContainerLeftTitleFontColor;
+                margin-bottom: calc($servicesContainerLeftWrapperContentPadding / 3);
+            }
+            &__bullet {
+                width: $servicesContainerLeftBulletWidth;
+                height: $servicesContainerLeftBulletHeight;
+                background-color: $servicesContainerLeftBulletBgColor;
+                border-radius: $servicesContainerLeftBulletRadius;
+                margin-bottom: calc($servicesContainerLeftWrapperContentPadding / 2);
+            }
+            &__text {
+                margin-bottom: calc($servicesContainerLeftWrapperContentPadding / 2);
             }
             &__elements {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-evenly;
+                height: $servicesContainerLeftElementsHeight;
+                margin-bottom: calc($servicesContainerLeftWrapperContentPadding / 2);
                 &__item {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
+                    width: $servicesContainerLeftElementsItemWidth;
+                    height: 100%;
+                    padding: $servicesContainerLeftElementsItemPadding;
+                    &:not(:last-child) {
+                        border-right: $servicesContainerLeftElementsItemBorder;
+                    }
                     &__logo {
                         display: flex;
                         justify-content: center;
                     }
                     &__text {
                         text-align: center;
+                    }
+                }
+            }
+            &__footer {
+                // &__btn {
+                //     width: $servicesContainerLeftFooterBtnWidth;
+                //     height: $servicesContainerLeftFooterBtnHeight;
+                //     display: flex;
+                //     flex-direction: row;
+                //     align-items: center;
+                //     justify-content: space-evenly;
+                //     & p {
+                //         height: 100%;
+                //         margin: 0;
+                //         display: flex;
+                //         align-items: center;
+                //     }
+                //     & i {
+                //         height: 100%;
+                //         font-size: 30px;
+                //         display: flex;
+                //         align-items: center;
+                //     }
+                // }
+                & .btn.btn-lg.btn-primary {
+                    width: $servicesContainerLeftFooterBtnWidth;
+                    height: $servicesContainerLeftFooterBtnHeight;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    background-color: transparent;
+                    color: $servicesContainerLeftElementsButtonFontColor;
+                    border: $servicesContainerLeftElementsButtonBorder;
+                    border-radius: $servicesContainerLeftElementsButtonRadius;
+                    & p {
+                        height: 100%;
+                        margin: 0;
+                        display: flex;
+                        align-items: center;
+                        font-size: $servicesContainerLeftElementsButtonFontSize;
+                        font-weight: $servicesContainerLeftElementsButtonFontWeight;
+                    }
+                    & i {
+                        height: 100%;
+                        font-size: $servicesContainerLeftElementsButtonArrowSize;
+                        display: flex;
+                        align-items: center;
+                    }
+                    &:hover {
+                        border-color: $servicesContainerLeftElementsButtonBorderHover;
+                        transition: none;
+                        > p {
+                            color: $servicesContainerLeftElementsButtonFontColorHover;
+                        }
+                        > i {
+                            color: $servicesContainerLeftElementsButtonFontColorHover;
+                        }
                     }
                 }
             }

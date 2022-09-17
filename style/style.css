@@ -350,18 +350,41 @@
   height: 900px;
   border-radius: 25px;
   background-color: rgba(219, 219, 219, 0.2509803922);
+  padding: 80px;
+}
+.services-container__left__title {
+  color: #1b5393;
+  margin-bottom: 26.6666666667px;
+}
+.services-container__left__bullet {
+  width: 80px;
+  height: 6px;
+  background-color: #F18B87;
+  border-radius: 25px;
+  margin-bottom: 40px;
+}
+.services-container__left__text {
+  margin-bottom: 40px;
 }
 .services-container__left__elements {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  height: 180px;
+  margin-bottom: 40px;
 }
 .services-container__left__elements__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 33%;
+  height: 100%;
+  padding: 0 20px;
+}
+.services-container__left__elements__item:not(:last-child) {
+  border-right: 1px solid lightgrey;
 }
 .services-container__left__elements__item__logo {
   display: flex;
@@ -369,6 +392,42 @@
 }
 .services-container__left__elements__item__text {
   text-align: center;
+}
+.services-container__left__footer .btn.btn-lg.btn-primary {
+  width: 230px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: transparent;
+  color: #1b5393;
+  border: 1px solid #1b5393;
+  border-radius: 25px;
+}
+.services-container__left__footer .btn.btn-lg.btn-primary p {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+.services-container__left__footer .btn.btn-lg.btn-primary i {
+  height: 100%;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+.services-container__left__footer .btn.btn-lg.btn-primary:hover {
+  border-color: #F18B87;
+  transition: none;
+}
+.services-container__left__footer .btn.btn-lg.btn-primary:hover > p {
+  color: #F18B87;
+}
+.services-container__left__footer .btn.btn-lg.btn-primary:hover > i {
+  color: #F18B87;
 }
 .services-container__right {
   width: 45%;
