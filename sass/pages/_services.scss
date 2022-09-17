@@ -10,11 +10,16 @@
         z-index: 5;
         display: flex;
         flex-direction: row;
+        width: 100vw;
+        height: 100%;
         &__left {
             width: $servicesContainerLeftWidth;
+            height: 100%;
             position: relative;
             &__wrapper {
                 position: absolute;
+                width: 82%;
+                z-index: 5;
                 display: flex;
                 flex-direction: column;
                 border: $servicesContainerLeftWrapperBorder;
@@ -23,6 +28,20 @@
                 top: -200px;
                 height: $servicesContainerLeftWrapperHeight;
                 background-color: $servicesContainerLeftWrapperBgColor;
+                &--shadow {
+                    content: '';
+                    position: absolute;
+                    z-index: 0;
+                    width: 87%;
+                    height: 0px;
+                    left: 154px;
+                    top: -180px;
+                    border-top-left-radius: $servicesContainerLeftWrapperRadius;
+                    border-top-right-radius: $servicesContainerLeftWrapperRadius;
+                    border-top: 45vw solid rgba(0, 0, 0, 0.068);
+                    border-left: 30px solid transparent;
+                    border-right: 30px solid transparent;
+                }
                 &__content {
                     height: $servicesContainerLeftWrapperHeight;
                     border-radius: $servicesContainerLeftWrapperRadius;
@@ -72,26 +91,6 @@
                 }
             }
             &__footer {
-                // &__btn {
-                //     width: $servicesContainerLeftFooterBtnWidth;
-                //     height: $servicesContainerLeftFooterBtnHeight;
-                //     display: flex;
-                //     flex-direction: row;
-                //     align-items: center;
-                //     justify-content: space-evenly;
-                //     & p {
-                //         height: 100%;
-                //         margin: 0;
-                //         display: flex;
-                //         align-items: center;
-                //     }
-                //     & i {
-                //         height: 100%;
-                //         font-size: 30px;
-                //         display: flex;
-                //         align-items: center;
-                //     }
-                // }
                 & .btn.btn-lg.btn-primary {
                     width: $servicesContainerLeftFooterBtnWidth;
                     height: $servicesContainerLeftFooterBtnHeight;
@@ -132,7 +131,9 @@
         }
         &__right {
             width: calc(100% - $servicesContainerLeftWidth);
+            height: 100%;
             position: absolute;
+            padding: 0 50px;
             right: 0;
             top: 0;
         }
