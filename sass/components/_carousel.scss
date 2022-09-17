@@ -14,19 +14,34 @@
             left: 15%;
             bottom: 15%;
             top: auto;
-            width: fit-content;
+            width: $carouselControlWidth;
+            height: $carouselControlHeight;
+            border-top-left-radius: $carouselControlRadius;
+            border-bottom-left-radius: $carouselControlRadius;
+            background-color: $carouselControlBgColor;
+            opacity: 1;
         }
         &-next {
-            left: 18%;
+            left: calc(15% + $carouselControlWidth - 1px);
             bottom: 15%;
             top: auto;
-            width: fit-content;
+            width: $carouselControlWidth;
+            height: $carouselControlHeight;
+            border-top-right-radius: $carouselControlRadius;
+            border-bottom-right-radius: $carouselControlRadius;
+            background-color: $carouselControlBgColor;
+            opacity: 1;
+            border-left: $carouselControlInnerBorder;
         }        
     }
     &-indicators {
         left: 8%;
         bottom: 12%;
         width: fit-content;
+        height: $carouselIndicatorsContainerHeight;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         & > li {
             border-radius: $carouselIndicatorsRadius;
             border: $carouselIndicatorsBorder;
@@ -38,6 +53,12 @@
             }
         }
     }    
+}
+
+.bi-chevron-left, .bi-chevron-right {
+    font-size: $carouselControlFontSize;
+    font-weight: $carouselControlFontWeight;
+    color: $carouselControlFontColor;
 }
 
 .container {
@@ -58,5 +79,6 @@
         align-items: center;
         justify-content: center;
         border: $carouselButtonBorder;
+        box-shadow: $carouselButtonBoxShadow;
     }
 }
