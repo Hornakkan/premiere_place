@@ -1,6 +1,8 @@
 @import "./utils/variables";
 @import "./components/nav";
 @import "./components/carousel";
+@import "./pages/home";
+@import "./pages/services";
 
 *, ::before, ::after {
     margin: 0;
@@ -12,7 +14,8 @@
 body {
     background-color: $bgColor;
     font-family: $fontFamily;
-    background-image: url(../ressources/cigogne.jpg);
+    background-image: $homeBgImage;
     background-repeat: no-repeat;
     width: 100vw;
+    overflow-x: hidden;
 }

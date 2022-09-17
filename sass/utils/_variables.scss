@@ -7,7 +7,16 @@ $blueOpacity50: #2d5f9880;
 $white: #FFFFFF;
 $black: #000000;
 
+// pages & globals
 $bgColor: #333;
+$homeBgImage: url(../ressources/cigogne.jpg);
+$homeHeight: 780px;
+$ppIcon: url(../ressources/pp_icon.png);
+$ppIconLarge: url(../ressources/pp_icon_large.png);
+$servicesBgColor: $white;
+$servicesHeight: 800px;
+$skewRight: rotate(-1deg);
+$skewHeight: 100px;
 
 // navbar
 $navBgColor: $white;
@@ -69,8 +78,9 @@ $carouselButtonFontSize: 0.85em;
 $carouselButtonFontWeight: 600;
 $carouselContainerFontSize: 30px;
 $carouselContainerFontWeight: 600;
-$carouselContainerWidth: 70%;
+$carouselContainerPadding: 200px;
 $carouselContainerTextShadow: 1px 1px 10px rgba(0, 0, 0, 0.329);
+$carouselContainerWidth: 70%;
 $carouselControlBgColor: #ffffffcc;
 $carouselControlFontColor: $blue;
 $carouselControlFontSize: 20px;
@@ -85,3 +95,11 @@ $carouselIndicatorsContainerHeight: $carouselControlHeight;
 $carouselIndicatorsHeight: 14px;
 $carouselIndicatorsWidth: 14px;
 $carouselIndicatorsRadius: 50%;
+
+// services
+$servicesContainerLeftWidth: 55%;
+$servicesContainerLeftWrapperHeight: 900px;
+$servicesContainerLeftWrapperRadius: 25px;
+$servicesContainerLeftWrapperBorder: 5px solid $white;
+$servicesContainerLeftWrapperBgColor: $white;
+$servicesContainerLeftWrapperContentBgColor: #dbdbdb40;

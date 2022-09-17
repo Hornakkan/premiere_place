@@ -2,7 +2,7 @@
     height: $carouselHeight;
     &-inner {
         height: 100%;
-        width: 90%;
+        width: 88%;
     }
     &-item {
         height: 100%;
@@ -67,7 +67,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    padding-bottom: 200px;
+    padding-bottom: $carouselContainerPadding;
     & p {
         font-size: $carouselContainerFontSize;
         font-weight: $carouselContainerFontWeight;

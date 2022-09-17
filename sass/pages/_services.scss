@@ -1,0 +1,69 @@
+
+.services {
+    height: $servicesHeight;
+    background-color: $servicesBgColor;
+    position: relative;
+    &-container {
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        display: flex;
+        flex-direction: row;
+        &__left {
+            width: $servicesContainerLeftWidth;
+            position: relative;
+            &__wrapper {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                border: $servicesContainerLeftWrapperBorder;
+                border-radius: $servicesContainerLeftWrapperRadius;
+                left: 180px;
+                top: -200px;
+                height: $servicesContainerLeftWrapperHeight;
+                background-color: $servicesContainerLeftWrapperBgColor;
+                &__content {
+                    height: $servicesContainerLeftWrapperHeight;
+                    border-radius: $servicesContainerLeftWrapperRadius;
+                    background-color: $servicesContainerLeftWrapperContentBgColor;
+                }
+            }
+            &__elements {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+                &__item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    &__logo {
+                        display: flex;
+                        justify-content: center;
+                    }
+                    &__text {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        &__right {
+            width: calc(100% - $servicesContainerLeftWidth);
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}
+
+.skew-elem {
+    background-color: $white;
+    height: $skewHeight;
+    width: 200%;
+    position: relative;
+    z-index: 0;
+    transform: $skewRight;
+    top: -40px;
+}

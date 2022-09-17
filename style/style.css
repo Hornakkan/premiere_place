@@ -229,7 +229,7 @@
 }
 .carousel-inner {
   height: 100%;
-  width: 90%;
+  width: 88%;
 }
 .carousel-item {
   height: 100%;
@@ -314,6 +314,79 @@
   box-shadow: 4px 3px 0 rgba(45, 95, 152, 0.5019607843);
 }
 
+.home {
+  height: 780px;
+}
+
+.services {
+  height: 800px;
+  background-color: #FFFFFF;
+  position: relative;
+}
+.services-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: row;
+}
+.services-container__left {
+  width: 55%;
+  position: relative;
+}
+.services-container__left__wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #FFFFFF;
+  border-radius: 25px;
+  left: 180px;
+  top: -200px;
+  height: 900px;
+  background-color: #FFFFFF;
+}
+.services-container__left__wrapper__content {
+  height: 900px;
+  border-radius: 25px;
+  background-color: rgba(219, 219, 219, 0.2509803922);
+}
+.services-container__left__elements {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.services-container__left__elements__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.services-container__left__elements__item__logo {
+  display: flex;
+  justify-content: center;
+}
+.services-container__left__elements__item__text {
+  text-align: center;
+}
+.services-container__right {
+  width: 45%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.skew-elem {
+  background-color: #FFFFFF;
+  height: 100px;
+  width: 200%;
+  position: relative;
+  z-index: 0;
+  transform: rotate(-1deg);
+  top: -40px;
+}
+
 *, ::before, ::after {
   margin: 0;
   padding: 0;
@@ -327,6 +400,7 @@ body {
   background-image: url(../ressources/cigogne.jpg);
   background-repeat: no-repeat;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
