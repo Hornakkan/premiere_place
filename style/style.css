@@ -478,6 +478,19 @@
   font-size: 45px;
   color: #1b5393;
 }
+.services-container__right__services__item:hover {
+  border: 2px solid rgba(27, 83, 147, 0.1843137255);
+  border-radius: 5px;
+  background: linear-gradient(to right, #ffffff 75%, transparent 100%), url(../ressources/hover-bloc-service.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.services-container__right__services__item:hover > .services-container__right__services__item__detail > .services-container__right__services__item__detail__title {
+  color: #F18B87;
+}
+.services-container__right__services__item:hover > .services-container__right__services__item__arrow > i {
+  color: #F18B87;
+}
 
 .skew-elem {
   background-color: #FFFFFF;

@@ -160,6 +160,21 @@
                             color: $servicesContainerRightServicesItemArrowFontColor;
                         }
                     }
+                    &:hover {
+                        border: $servicesContainerRightServicesItemBorderHover;
+                        border-radius: $servicesContainerRightServicesItemBorderRadiusHover;
+                        background: $servicesContainerRightServicesItemBgHover;
+                        background-repeat: no-repeat;
+                        background-position: right;
+                        & > .services-container__right__services__item__detail > .services-container__right__services__item__detail__title {
+                            color: $servicesContainerRightServicesItemDetailTitleFontColorHover;
+                        }
+                        & > .services-container__right__services__item__arrow {
+                            & > i {
+                                color: $servicesContainerRightServicesItemArrowFontHover;
+                            }
+                        }
+                    }
                 }
             }
         }
