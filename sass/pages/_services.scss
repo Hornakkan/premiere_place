@@ -1,6 +1,6 @@
 
 .services {
-    height: $servicesHeight;
+    min-height: $servicesHeight;
     background-color: $servicesBgColor;
     position: relative;
     &-container {
@@ -11,10 +11,10 @@
         display: flex;
         flex-direction: row;
         width: 100vw;
-        height: 100%;
+        min-height: $servicesHeight;
         &__left {
             width: $servicesContainerLeftWidth;
-            height: 100%;
+            min-height: $servicesHeight;
             position: relative;
             &__wrapper {
                 position: absolute;
@@ -26,7 +26,7 @@
                 border-radius: $servicesContainerLeftWrapperRadius;
                 left: 180px;
                 top: -200px;
-                height: $servicesContainerLeftWrapperHeight;
+                min-height: $servicesContainerLeftWrapperHeight;
                 background-color: $servicesContainerLeftWrapperBgColor;
                 &--shadow {
                     content: '';
@@ -43,7 +43,7 @@
                     border-right: 30px solid transparent;
                 }
                 &__content {
-                    height: $servicesContainerLeftWrapperHeight;
+                    min-height: $servicesContainerLeftWrapperHeight;
                     border-radius: $servicesContainerLeftWrapperRadius;
                     background-color: $servicesContainerLeftWrapperContentBgColor;
                     padding: $servicesContainerLeftWrapperContentPadding;
@@ -68,7 +68,8 @@
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-evenly;
-                height: $servicesContainerLeftElementsHeight;
+                min-height: $servicesContainerLeftElementsHeight;
+                // flex-wrap: wrap;
                 margin-bottom: calc($servicesContainerLeftWrapperContentPadding / 2);
                 &__item {
                     display: flex;
@@ -131,8 +132,8 @@
         }
         &__right {
             width: calc(100% - $servicesContainerLeftWidth);
-            height: 100%;
-            position: absolute;
+            min-height: $servicesHeight;
+            position: relative;
             padding: $servicesContainerRightPadding;
             right: 0;
             top: 0;
@@ -140,13 +141,21 @@
                 font-size: $servicesContainerRightTitleFontSize;
                 color: $servicesContainerRightTitleFontColor;
                 font-weight: $servicesContainerRightTitleFontWeight;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
             }
             &__services {
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                margin: $servicesContainerRightServicesItemMargin;
                 &__item {
                     width: 75%;
                     display: flex;
                     flex-direction: row;
                     padding: $servicesContainerRightServicesItemPadding;
+                    margin-bottom: $servicesContainerRightServicesItemMargin;
                     &__detail {
                         padding: $servicesContainerRightServicesItemDetailPadding;
                         &__title {
