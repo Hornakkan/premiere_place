@@ -1,0 +1,7 @@
+.news {
+    height: $newsHeight;
+    position: relative;
+    &--wrapper {
+        height: 900px;
+    }
+}

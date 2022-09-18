@@ -1,8 +1,10 @@
 @import "./utils/variables";
 @import "./components/nav";
 @import "./components/carousel";
+@import "./components/skew";
 @import "./pages/home";
 @import "./pages/services";
+@import "./pages/news";
 
 *, ::before, ::after {
     margin: 0;
