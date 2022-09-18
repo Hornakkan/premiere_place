@@ -11,19 +11,22 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 40px;
+        padding: 0 100px;
     }
 }
 
 .articles {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     width: 50%;
     &--title {
         width: 100%;
         display: flex;
         justify-content: center;
+        font-size: 1.8em;
+        color: $blue;
+        font-weight: bold;
     }
     &--wrapper {
         width: 100%;
@@ -50,6 +53,10 @@
             align-items: center;
             & img:not(.articles--item--logo) {
                 width: 100%;
+            }
+            &:hover {
+                box-shadow: 3px 4px 0 rgba(241, 138, 135, 0.5);
+                filter: drop-shadow(4px 5px 0 rgba(241, 138, 135, 0.4));
             }
         }
         &--logo {
@@ -108,12 +115,18 @@
         justify-content: center;
         align-items: center;
         color: white;
+        font-weight: bold;
+        font-size: 0.9em;
         background-color: $blue;
         border-radius: 25px;
+        position: relative;
         &:hover {
             text-decoration: none;
             color: white;
             background-color: $pink;
+            border: 1px solid white;
+            box-shadow: 3px 4px 0 rgba(241, 138, 135, 0.5);
+            filter: drop-shadow(4px 5px 0 rgba(241, 138, 135, 0.4));
         }
         &--container {
             width: 100%;
@@ -125,7 +138,7 @@
 .rdv {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     width: 50%;
     &--btn {
         width: 162px;
@@ -135,12 +148,15 @@
         justify-content: center;
         align-items: center;
         color: white;
+        font-weight: bold;
+        font-size: 0.9em;        
         background-color: $blue;
         border-radius: 25px;
         &:hover {
             text-decoration: none;
             color: white;
             background-color: $pink;
+            border: 1px solid white;
         }
         &--container {
             width: 100%;
