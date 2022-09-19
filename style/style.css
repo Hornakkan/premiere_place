@@ -703,8 +703,8 @@
   color: #FFFFFF;
 }
 .rdv__date {
-  height: 140px;
-  width: 130px;
+  height: 145px;
+  width: 135px;
   display: flex;
   flex-direction: column;
   border: 2px solid #F18B87;
@@ -747,7 +747,8 @@
 .rdv__detail {
   display: flex;
   flex-direction: column;
-  padding: 10px 20px;
+  padding: 0 20px;
+  margin: 20px 0 0 0;
 }
 .rdv__detail__title {
   font-size: 1em;
