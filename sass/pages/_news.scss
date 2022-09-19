@@ -154,6 +154,19 @@
         display: flex;
         flex-direction: row;
         margin: $rdvItemMargin;
+        border-radius: $rdvItemRadius;
+        align-items: center;
+        justify-content: space-around;
+        padding: $rdvItemPadding;
+        &:hover {
+            background: $rdvItemBgHover;
+            & > .rdv__date {
+                border: $rdvDateBorderHover;
+                & > .rdv__date__header {
+                    background-color: $rdvDateHeaderBgColorHover;
+                }
+            }
+        }
     }
     &__date {
         height: $rdvDateHeight;
@@ -163,6 +176,7 @@
         border: $rdvDateBorder;
         border-radius: $rdvDateRadius;
         color: $rdvDateFontColor;
+        background-color: $rdvDateBgColor;
         &__header {
             font-size: $rdvDateHeaderFontSize;
             height: $rdvDateHeaderHeight;
@@ -186,6 +200,7 @@
             width: 100%;
             text-transform: uppercase;
             font-size: $rdvDateMonthFontSize;
+            font-weight: $rdvDateMonthFontWeight;
             text-align: center;
         }
         &__year {
@@ -198,6 +213,16 @@
     &__detail {
         display: flex;
         flex-direction: column;
+        padding: $rdvDetailPadding;
+        &__title {
+            font-size: $rdvDetailTitleFontSize;
+            color: $rdvDetailTitleFontColor;
+            font-weight: $rdvDetailTitleFontWeight;
+        }
+        &__text {
+            width: $rdvDetailTextWidth;
+            font-size: $rdvDetailTextFontSize;
+        }
         &__footer {
             display: flex;
             flex-direction: row;

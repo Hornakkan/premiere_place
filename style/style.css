@@ -679,15 +679,29 @@
   display: flex;
   flex-direction: row;
   margin: 20px 0;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 10px;
+}
+.rdv__item:hover {
+  background: linear-gradient(to right, #F6F6F6 10%, transparent 100%);
+}
+.rdv__item:hover > .rdv__date {
+  border: 2px solid #1b5393;
+}
+.rdv__item:hover > .rdv__date > .rdv__date__header {
+  background-color: #1b5393;
 }
 .rdv__date {
   height: 140px;
-  width: 120px;
+  width: 130px;
   display: flex;
   flex-direction: column;
   border: 2px solid #F18B87;
   border-radius: 5px;
   color: #1b5393;
+  background-color: #FFFFFF;
 }
 .rdv__date__header {
   font-size: 7px;
@@ -712,6 +726,7 @@
   width: 100%;
   text-transform: uppercase;
   font-size: 0.75em;
+  font-weight: bold;
   text-align: center;
 }
 .rdv__date__year {
@@ -723,6 +738,16 @@
 .rdv__detail {
   display: flex;
   flex-direction: column;
+  padding: 10px 20px;
+}
+.rdv__detail__title {
+  font-size: 1em;
+  color: #1b5393;
+  font-weight: bold;
+}
+.rdv__detail__text {
+  width: 90%;
+  font-size: 1em;
 }
 .rdv__detail__footer {
   display: flex;
