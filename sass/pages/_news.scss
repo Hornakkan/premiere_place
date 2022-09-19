@@ -173,9 +173,9 @@
                     }
                     & > .rdv__detail__footer__subscribe {
                         border: none;
-                        background-color: $pink;
-                        border-radius: 25px;
-                        color: $white;
+                        background-color: $rdvDetailFooterSubscribeBgHover;
+                        border-radius: $rdvDetailFooterSubscribeRadius;
+                        color: $rdvDetailFooterSubscribeFontColorHover;
                     }
                 }
             }
@@ -239,23 +239,27 @@
         &__footer {
             display: flex;
             flex-direction: row;
-            height: 45px;
-            margin: 20px 0;
-            width: 90%;
+            height: $rdvDetailFooterHeight;
+            width: $rdvDetailFooterWidth;
+            margin: $rdvDetailFooterMargin;
             justify-content: space-evenly;
             &__link {
                 width: 50%;
-                border-top: 2px solid #F6F6F6;
-                border-right: 2px solid #F6F6F6;
-                font-size: 1em;
+                border-top: $rdvDetailFooterBorder;
+                border-right: $rdvDetailFooterBorder;
+                font-size: $rdvDetailFooterLinkFontSize;
+                font-weight: $rdvDetailFooterLinkFontWeight;
+                color: $rdvDetailFooterLinkFontColor;
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
             &__subscribe {
                 width: 50%;
-                border-top: 2px solid #F6F6F6;
-                font-size: 1em;
+                border-top: $rdvDetailFooterBorder;
+                font-size: $rdvDetailFooterLinkFontSize;
+                font-weight: $rdvDetailFooterSubscribeFontWeight;
+                color: $rdvDetailFooterSubscribeFontColor;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -263,7 +267,7 @@
                     margin: 0;
                 }
                 & i {
-                    font-size: 30px;
+                    font-size: $rdvDetailFooterArrowFontSize;
                 }
             }
         }

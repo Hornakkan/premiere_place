@@ -762,15 +762,17 @@
   display: flex;
   flex-direction: row;
   height: 45px;
-  margin: 20px 0;
   width: 90%;
+  margin: 20px 0;
   justify-content: space-evenly;
 }
 .rdv__detail__footer__link {
   width: 50%;
   border-top: 2px solid #F6F6F6;
   border-right: 2px solid #F6F6F6;
-  font-size: 1em;
+  font-size: 0.95em;
+  font-weight: bold;
+  color: #1b5393;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -778,7 +780,9 @@
 .rdv__detail__footer__subscribe {
   width: 50%;
   border-top: 2px solid #F6F6F6;
-  font-size: 1em;
+  font-size: 0.95em;
+  font-weight: bold;
+  color: #F18B87;
   display: flex;
   align-items: center;
   justify-content: center;
