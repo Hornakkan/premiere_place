@@ -17,10 +17,9 @@ $ppIconLarge: url(../ressources/pp_icon_large.png);
 $servicesBgColor: $white;
 $servicesHeight: 900px;
 $skewRight: rotate(-1deg);
-$skewLeft: rotate(1deg);
-$skewHeight: 100px;
+$skewLeft: rotate(3deg);
+$skewHeight: 110px;
 $newsBgColor: $white;
-$newsHeight: 900px;
 
 // navbar
 $navBgColor: $white;
@@ -147,7 +146,7 @@ $servicesContainerRightServicesItemBgHover: linear-gradient(to right, #ffffff 75
 
 // news - articles
 $newsWidth: 100vw;
-$newsHeight: 95vh;
+$newsHeight: 70vh;
 $newsPadding: 0 100px;
 $articlesWidth: 50%;
 $articlesTitleFontSize: 1.8em;

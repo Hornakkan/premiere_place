@@ -1,11 +1,11 @@
 .skew-left {
     background-color: $white;
     min-height: $skewHeight;
-    width: 200%;
+    width: 150%;
     position: relative;
     z-index: 0;
     transform: $skewLeft;
-    bottom: 40px;
+    bottom: -80px;
 }
 .skew-right {
     background-color: $white;
