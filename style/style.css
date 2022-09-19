@@ -529,7 +529,7 @@
 }
 .news--wrapper {
   width: 100%;
-  height: 80vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -548,6 +548,7 @@
   font-size: 1.8em;
   color: #1b5393;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 .articles--wrapper {
   width: 100%;
@@ -557,8 +558,8 @@
   margin: 0 20px;
 }
 .articles--item {
-  width: 370px;
-  height: 430px;
+  width: 360px;
+  height: 400px;
   margin: 20px;
   display: flex;
   flex-direction: column;
@@ -578,6 +579,7 @@
   width: 100%;
 }
 .articles--item--picture:hover {
+  cursor: pointer;
   box-shadow: 3px 4px 0 rgba(241, 138, 135, 0.5);
   filter: drop-shadow(4px 5px 0 rgba(241, 138, 135, 0.4));
 }
@@ -585,7 +587,7 @@
   width: 130px;
 }
 .articles--item--date {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5019607843);
   margin: 10px 0 0 5px;
 }
 .articles--item--date p {
@@ -635,7 +637,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #FFFFFF;
   font-weight: bold;
   font-size: 0.9em;
   background-color: #1b5393;
@@ -644,9 +646,9 @@
 }
 .articles--btn:hover {
   text-decoration: none;
-  color: white;
+  color: #FFFFFF;
   background-color: #F18B87;
-  border: 1px solid white;
+  border: 1px solid #FFFFFF;
   box-shadow: 3px 4px 0 rgba(241, 138, 135, 0.5);
   filter: drop-shadow(4px 5px 0 rgba(241, 138, 135, 0.4));
 }
@@ -661,6 +663,18 @@
   flex-direction: column;
   width: 50%;
 }
+.rdv--title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 1.8em;
+  color: #1b5393;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.rdv--wrapper {
+  padding: 0 100px;
+}
 .rdv--btn {
   width: 162px;
   height: 50px;
@@ -668,7 +682,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #FFFFFF;
   font-weight: bold;
   font-size: 0.9em;
   background-color: #1b5393;
@@ -676,9 +690,11 @@
 }
 .rdv--btn:hover {
   text-decoration: none;
-  color: white;
+  color: #FFFFFF;
   background-color: #F18B87;
-  border: 1px solid white;
+  border: 1px solid #FFFFFF;
+  box-shadow: 3px 4px 0 rgba(241, 138, 135, 0.5);
+  filter: drop-shadow(4px 5px 0 rgba(241, 138, 135, 0.4));
 }
 .rdv--btn--container {
   width: 100%;

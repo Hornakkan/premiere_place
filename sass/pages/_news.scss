@@ -2,52 +2,50 @@
     // height: $newsHeight;
     background-color: $newsBgColor;
     position: relative;
-    width: 100vw;
+    width: $newsWidth;
     &--wrapper {
-        // height: 900px;
-        // background-color: $newsBgColor;
         width: 100%;
-        height: 80vh;
+        min-height: $newsHeight;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 0 100px;
+        padding: $newsPadding;
     }
 }
 
 .articles {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
-    width: 50%;
+    width: $articlesWidth;
     &--title {
         width: 100%;
         display: flex;
         justify-content: center;
-        font-size: 1.8em;
-        color: $blue;
-        font-weight: bold;
+        font-size: $articlesTitleFontSize;
+        color: $articlesTitleFontColor;
+        font-weight: $articlesTitleFontWeight;
+        margin-bottom: $articlesTitleMargin;
     }
     &--wrapper {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin: 0 20px;
+        margin: $articlesWrapperMargin;
     }
     &--item {
-        width: 370px;
-        height: 430px;
-        margin: 20px;
+        width: $articlesItemWidth;
+        height: $articlesItemHeight;
+        margin: $articlesItemMargin;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
         &--picture {
-            height: 55%;
-            border-radius: 60px;
+            height: $articlesPictureHeight;
+            border-radius: $articlesPictureRadius;
             overflow: hidden;
-            background-color: #E9EEF4;
+            background-color: $articlesPictureBgColor;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -55,34 +53,35 @@
                 width: 100%;
             }
             &:hover {
-                box-shadow: 3px 4px 0 rgba(241, 138, 135, 0.5);
-                filter: drop-shadow(4px 5px 0 rgba(241, 138, 135, 0.4));
+                cursor: pointer;
+                box-shadow: $articlesPictureHoverBoxShadow;
+                filter: $articlesPictureHoverFilter;
             }
         }
         &--logo {
-            width: 130px;
+            width: $articlesLogoWidth;
         }
         &--date {
-            color:rgba(0, 0, 0, 0.5);
-            margin: 10px 0 0 5px;
+            color: $articlesDateFontColor;
+            margin: $articlesDateMargin;
             & p {
                 margin: 0;
             }
             & span {
-                font-weight: bold;
+                font-weight: $articlesDateSpanFontWeight;
             }
         }
         &--title {
             color: $blue;
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 5px;
+            font-size: $articlesItemTitleFontSize;
+            font-weight: $articlesItemTitleFontWeight;
+            margin-bottom: $articlesItemTitleMargin;
         }
         &--link {
-            height: 25px;
-            width: 105px;
-            color: $pink;
-            font-weight: bold;
+            height: $articlesLinkHeight;
+            width: $articlesLinkWidth;
+            color: $articlesLinkFontColor;
+            font-weight: $articlesLinkFontWeight;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -98,35 +97,35 @@
                 margin: 0;
             }
             & i {
-                font-size: 30px;
-                margin-left: 5px;
+                font-size: $articlesLinkArrowSize;
+                margin-left: $articlesLinkArrowMargin;
             }
             &:hover {
-                color: $blue;
+                color: $articlesLinkFontColorHover;
                 text-decoration: none;
             }
         }
     }
     &--btn {
-        width: 222px;
-        height: 50px;
+        width: $articlesBtnWidth;
+        height: $articlesBtnHeight;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        color: white;
-        font-weight: bold;
-        font-size: 0.9em;
-        background-color: $blue;
-        border-radius: 25px;
+        color: $articlesBtnFontColor;
+        font-weight: $articlesBtnFontWeight;
+        font-size: $articlesBtnFontSize;
+        background-color: $articlesBtnBgColor;
+        border-radius: $articlesBtnRadius;
         position: relative;
         &:hover {
             text-decoration: none;
-            color: white;
-            background-color: $pink;
-            border: 1px solid white;
-            box-shadow: 3px 4px 0 rgba(241, 138, 135, 0.5);
-            filter: drop-shadow(4px 5px 0 rgba(241, 138, 135, 0.4));
+            color: $articlesBtnFontColorHover;
+            background-color: $articlesBtnBgColorHover;
+            border: $articlesBtnBorderHover;
+            box-shadow: $articlesBtnHoverBoxShadow;
+            filter: $articlesBtnHoverBoxFilter;
         }
         &--container {
             width: 100%;
@@ -138,25 +137,38 @@
 .rdv {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
-    width: 50%;
+    width: $rdvWidth;
+    &--title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: $rdvTitleFontSize;
+        color: $rdvTitleFontColor;
+        font-weight: $rdvTitleFontWeight;
+        margin-bottom: $rdvTitleMargin;        
+    }
+    &--wrapper {
+        padding: $rdvWrapperPadding;
+    }
     &--btn {
-        width: 162px;
-        height: 50px;
+        width: $rdvBtnWidth;
+        height: $rdvBtnHeight;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        color: white;
-        font-weight: bold;
-        font-size: 0.9em;        
-        background-color: $blue;
-        border-radius: 25px;
+        color: $rdvBtnFontColor;
+        font-weight: $rdvBtnFontWeight;
+        font-size: $rdvBtnFontSize;        
+        background-color: $rdvBtnBgColor;
+        border-radius: $rdvBtnRadius;
         &:hover {
             text-decoration: none;
-            color: white;
-            background-color: $pink;
-            border: 1px solid white;
+            color: $rdvBtnFontColorHover;
+            background-color: $rdvBtnBgColorHover;
+            border: $rdvBtnBorderHover;
+            box-shadow: $rdvBtnHoverBoxShadow;
+            filter: $rdvBtnHoverBoxFilter;
         }
         &--container {
             width: 100%;
