@@ -529,7 +529,7 @@
 }
 .news__wrapper {
   width: 100%;
-  min-height: 80vh;
+  min-height: 95vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -693,6 +693,15 @@
 .rdv__item:hover > .rdv__date > .rdv__date__header {
   background-color: #1b5393;
 }
+.rdv__item:hover > .rdv__detail > .rdv__detail__footer > .rdv__detail__footer__link {
+  border: none;
+}
+.rdv__item:hover > .rdv__detail > .rdv__detail__footer > .rdv__detail__footer__subscribe {
+  border: none;
+  background-color: #F18B87;
+  border-radius: 25px;
+  color: #FFFFFF;
+}
 .rdv__date {
   height: 140px;
   width: 130px;
@@ -752,6 +761,33 @@
 .rdv__detail__footer {
   display: flex;
   flex-direction: row;
+  height: 45px;
+  margin: 20px 0;
+  width: 90%;
+  justify-content: space-evenly;
+}
+.rdv__detail__footer__link {
+  width: 50%;
+  border-top: 2px solid #F6F6F6;
+  border-right: 2px solid #F6F6F6;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rdv__detail__footer__subscribe {
+  width: 50%;
+  border-top: 2px solid #F6F6F6;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rdv__detail__footer__subscribe p {
+  margin: 0;
+}
+.rdv__detail__footer__subscribe i {
+  font-size: 30px;
 }
 .rdv__btn {
   width: 162px;

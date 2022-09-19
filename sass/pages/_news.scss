@@ -166,6 +166,19 @@
                     background-color: $rdvDateHeaderBgColorHover;
                 }
             }
+            & > .rdv__detail {
+                & > .rdv__detail__footer {
+                    & > .rdv__detail__footer__link {
+                        border: none;
+                    }
+                    & > .rdv__detail__footer__subscribe {
+                        border: none;
+                        background-color: $pink;
+                        border-radius: 25px;
+                        color: $white;
+                    }
+                }
+            }
         }
     }
     &__date {
@@ -226,6 +239,33 @@
         &__footer {
             display: flex;
             flex-direction: row;
+            height: 45px;
+            margin: 20px 0;
+            width: 90%;
+            justify-content: space-evenly;
+            &__link {
+                width: 50%;
+                border-top: 2px solid #F6F6F6;
+                border-right: 2px solid #F6F6F6;
+                font-size: 1em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &__subscribe {
+                width: 50%;
+                border-top: 2px solid #F6F6F6;
+                font-size: 1em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & p {
+                    margin: 0;
+                }
+                & i {
+                    font-size: 30px;
+                }
+            }
         }
     }
     &__btn {
