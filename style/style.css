@@ -580,8 +580,7 @@
 }
 .articles--item--picture:hover {
   cursor: pointer;
-  box-shadow: 3px 4px 0 rgba(241, 138, 135, 0.5);
-  filter: drop-shadow(4px 5px 0 rgba(241, 138, 135, 0.4));
+  box-shadow: 5px 4px 0 rgba(241, 138, 135, 0.48), 9px 8px 0 rgba(241, 138, 135, 0.2);
 }
 .articles--item--logo {
   width: 130px;
@@ -589,6 +588,8 @@
 .articles--item--date {
   color: rgba(0, 0, 0, 0.5019607843);
   margin: 10px 0 0 5px;
+  font-size: 1em;
+  margin: 15px 0;
 }
 .articles--item--date p {
   margin: 0;
@@ -649,8 +650,7 @@
   color: #FFFFFF;
   background-color: #F18B87;
   border: 1px solid #FFFFFF;
-  box-shadow: 3px 4px 0 rgba(241, 138, 135, 0.5);
-  filter: drop-shadow(4px 5px 0 rgba(241, 138, 135, 0.4));
+  box-shadow: 4px 5px 0 rgba(241, 138, 135, 0.48), 8px 10px 0 rgba(241, 138, 135, 0.2);
 }
 .articles--btn--container {
   width: 100%;
@@ -693,8 +693,7 @@
   color: #FFFFFF;
   background-color: #F18B87;
   border: 1px solid #FFFFFF;
-  box-shadow: 3px 4px 0 rgba(241, 138, 135, 0.5);
-  filter: drop-shadow(4px 5px 0 rgba(241, 138, 135, 0.4));
+  box-shadow: 4px 5px 0 rgba(241, 138, 135, 0.48), 8px 10px 0 rgba(241, 138, 135, 0.2);
 }
 .rdv--btn--container {
   width: 100%;

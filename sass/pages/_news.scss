@@ -55,7 +55,7 @@
             &:hover {
                 cursor: pointer;
                 box-shadow: $articlesPictureHoverBoxShadow;
-                filter: $articlesPictureHoverFilter;
+                // filter: $articlesPictureHoverFilter;
             }
         }
         &--logo {
@@ -64,6 +64,8 @@
         &--date {
             color: $articlesDateFontColor;
             margin: $articlesDateMargin;
+            font-size: 1em;
+            margin: 15px 0;
             & p {
                 margin: 0;
             }
@@ -125,7 +127,6 @@
             background-color: $articlesBtnBgColorHover;
             border: $articlesBtnBorderHover;
             box-shadow: $articlesBtnHoverBoxShadow;
-            filter: $articlesBtnHoverBoxFilter;
         }
         &--container {
             width: 100%;
@@ -168,7 +169,6 @@
             background-color: $rdvBtnBgColorHover;
             border: $rdvBtnBorderHover;
             box-shadow: $rdvBtnHoverBoxShadow;
-            filter: $rdvBtnHoverBoxFilter;
         }
         &--container {
             width: 100%;
