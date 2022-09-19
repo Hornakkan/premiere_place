@@ -527,7 +527,7 @@
   position: relative;
   width: 100vw;
 }
-.news--wrapper {
+.news__wrapper {
   width: 100%;
   min-height: 80vh;
   display: flex;
@@ -541,7 +541,7 @@
   flex-direction: column;
   width: 50%;
 }
-.articles--title {
+.articles__title {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -550,14 +550,14 @@
   font-weight: bold;
   margin-bottom: 20px;
 }
-.articles--wrapper {
+.articles__wrapper {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 0 20px;
 }
-.articles--item {
+.articles__item {
   width: 360px;
   height: 400px;
   margin: 20px;
@@ -566,7 +566,7 @@
   justify-content: center;
   text-align: center;
 }
-.articles--item--picture {
+.articles__item__picture {
   height: 55%;
   border-radius: 60px;
   overflow: hidden;
@@ -575,35 +575,35 @@
   justify-content: center;
   align-items: center;
 }
-.articles--item--picture img:not(.articles--item--logo) {
+.articles__item__picture img:not(.articles__item__logo) {
   width: 100%;
 }
-.articles--item--picture:hover {
+.articles__item__picture:hover {
   cursor: pointer;
   box-shadow: 5px 4px 0 rgba(241, 138, 135, 0.48), 9px 8px 0 rgba(241, 138, 135, 0.2);
 }
-.articles--item--logo {
+.articles__item__logo {
   width: 130px;
 }
-.articles--item--date {
+.articles__item__date {
   color: rgba(0, 0, 0, 0.5019607843);
   margin: 10px 0 0 5px;
   font-size: 1em;
   margin: 15px 0;
 }
-.articles--item--date p {
+.articles__item__date p {
   margin: 0;
 }
-.articles--item--date span {
+.articles__item__date span {
   font-weight: bold;
 }
-.articles--item--title {
+.articles__item__title {
   color: #1b5393;
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 5px;
 }
-.articles--item--link {
+.articles__item__link {
   height: 25px;
   width: 105px;
   color: #F18B87;
@@ -613,25 +613,25 @@
   justify-content: center;
   align-items: center;
 }
-.articles--item--link--wrapper {
+.articles__item__link__wrapper {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.articles--item--link p {
+.articles__item__link p {
   margin: 0;
 }
-.articles--item--link i {
+.articles__item__link i {
   font-size: 30px;
   margin-left: 5px;
 }
-.articles--item--link:hover {
+.articles__item__link:hover {
   color: #1b5393;
   text-decoration: none;
 }
-.articles--btn {
+.articles__btn {
   width: 222px;
   height: 50px;
   display: flex;
@@ -645,14 +645,14 @@
   border-radius: 25px;
   position: relative;
 }
-.articles--btn:hover {
+.articles__btn:hover {
   text-decoration: none;
   color: #FFFFFF;
   background-color: #F18B87;
   border: 1px solid #FFFFFF;
   box-shadow: 4px 5px 0 rgba(241, 138, 135, 0.48), 8px 10px 0 rgba(241, 138, 135, 0.2);
 }
-.articles--btn--container {
+.articles__btn__container {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -663,7 +663,7 @@
   flex-direction: column;
   width: 50%;
 }
-.rdv--title {
+.rdv__title {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -672,10 +672,63 @@
   font-weight: bold;
   margin-bottom: 20px;
 }
-.rdv--wrapper {
+.rdv__wrapper {
   padding: 0 100px;
 }
-.rdv--btn {
+.rdv__item {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.rdv__date {
+  height: 140px;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #F18B87;
+  border-radius: 5px;
+  color: #1b5393;
+}
+.rdv__date__header {
+  font-size: 7px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #FFFFFF;
+  padding: 0 15px;
+  background-color: #F18B87;
+}
+.rdv__date__day {
+  width: 100%;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+.rdv__date__month {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  text-align: center;
+}
+.rdv__date__year {
+  font-size: 0.95em;
+  font-weight: bold;
+  line-height: 0.9em;
+  text-align: center;
+}
+.rdv__detail {
+  display: flex;
+  flex-direction: column;
+}
+.rdv__detail__footer {
+  display: flex;
+  flex-direction: row;
+}
+.rdv__btn {
   width: 162px;
   height: 50px;
   display: flex;
@@ -688,14 +741,14 @@
   background-color: #1b5393;
   border-radius: 25px;
 }
-.rdv--btn:hover {
+.rdv__btn:hover {
   text-decoration: none;
   color: #FFFFFF;
   background-color: #F18B87;
   border: 1px solid #FFFFFF;
   box-shadow: 4px 5px 0 rgba(241, 138, 135, 0.48), 8px 10px 0 rgba(241, 138, 135, 0.2);
 }
-.rdv--btn--container {
+.rdv__btn__container {
   width: 100%;
   display: flex;
   justify-content: center;

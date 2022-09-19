@@ -3,7 +3,7 @@
     background-color: $newsBgColor;
     position: relative;
     width: $newsWidth;
-    &--wrapper {
+    &__wrapper {
         width: 100%;
         min-height: $newsHeight;
         display: flex;
@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
     width: $articlesWidth;
-    &--title {
+    &__title {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -26,14 +26,14 @@
         font-weight: $articlesTitleFontWeight;
         margin-bottom: $articlesTitleMargin;
     }
-    &--wrapper {
+    &__wrapper {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
         margin: $articlesWrapperMargin;
     }
-    &--item {
+    &__item {
         width: $articlesItemWidth;
         height: $articlesItemHeight;
         margin: $articlesItemMargin;
@@ -41,7 +41,7 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        &--picture {
+        &__picture {
             height: $articlesPictureHeight;
             border-radius: $articlesPictureRadius;
             overflow: hidden;
@@ -49,19 +49,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            & img:not(.articles--item--logo) {
+            & img:not(.articles__item__logo) {
                 width: 100%;
             }
             &:hover {
                 cursor: pointer;
                 box-shadow: $articlesPictureHoverBoxShadow;
-                // filter: $articlesPictureHoverFilter;
             }
         }
-        &--logo {
+        &__logo {
             width: $articlesLogoWidth;
         }
-        &--date {
+        &__date {
             color: $articlesDateFontColor;
             margin: $articlesDateMargin;
             font-size: 1em;
@@ -73,13 +72,13 @@
                 font-weight: $articlesDateSpanFontWeight;
             }
         }
-        &--title {
+        &__title {
             color: $blue;
             font-size: $articlesItemTitleFontSize;
             font-weight: $articlesItemTitleFontWeight;
             margin-bottom: $articlesItemTitleMargin;
         }
-        &--link {
+        &__link {
             height: $articlesLinkHeight;
             width: $articlesLinkWidth;
             color: $articlesLinkFontColor;
@@ -88,7 +87,7 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            &--wrapper {
+            &__wrapper {
                 width: 100%;
                 display: flex;
                 flex-direction: row;
@@ -108,7 +107,7 @@
             }
         }
     }
-    &--btn {
+    &__btn {
         width: $articlesBtnWidth;
         height: $articlesBtnHeight;
         display: flex;
@@ -128,7 +127,7 @@
             border: $articlesBtnBorderHover;
             box-shadow: $articlesBtnHoverBoxShadow;
         }
-        &--container {
+        &__container {
             width: 100%;
             display: flex;
             justify-content: center;
@@ -139,7 +138,7 @@
     display: flex;
     flex-direction: column;
     width: $rdvWidth;
-    &--title {
+    &__title {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -148,10 +147,63 @@
         font-weight: $rdvTitleFontWeight;
         margin-bottom: $rdvTitleMargin;        
     }
-    &--wrapper {
+    &__wrapper {
         padding: $rdvWrapperPadding;
     }
-    &--btn {
+    &__item {
+        display: flex;
+        flex-direction: row;
+        margin: $rdvItemMargin;
+    }
+    &__date {
+        height: $rdvDateHeight;
+        width: $rdvDateWidth;
+        display: flex;
+        flex-direction: column;
+        border: $rdvDateBorder;
+        border-radius: $rdvDateRadius;
+        color: $rdvDateFontColor;
+        &__header {
+            font-size: $rdvDateHeaderFontSize;
+            height: $rdvDateHeaderHeight;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            color: $rdvDateHeaderFontColor;
+            padding: $rdvDateHeaderPadding;
+            background-color: $rdvDateHeaderBgColor;
+        }
+        &__day {
+            width: 100%;
+            font-size: $rdvDateDayFontSize;
+            line-height: $rdvDateDayLineHeight;
+            font-weight: $rdvDateDayFontWeight;
+            text-align: center;
+            margin-top: $rdvDateDayMargin;
+        }
+        &__month {
+            width: 100%;
+            text-transform: uppercase;
+            font-size: $rdvDateMonthFontSize;
+            text-align: center;
+        }
+        &__year {
+            font-size: $rdvDateYearFontSize;
+            font-weight: bold;
+            line-height: $rdvDateYearLineHeight;
+            text-align: center;
+        }
+    }
+    &__detail {
+        display: flex;
+        flex-direction: column;
+        &__footer {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    &__btn {
         width: $rdvBtnWidth;
         height: $rdvBtnHeight;
         display: flex;
@@ -170,7 +222,7 @@
             border: $rdvBtnBorderHover;
             box-shadow: $rdvBtnHoverBoxShadow;
         }
-        &--container {
+        &__container {
             width: 100%;
             display: flex;
             justify-content: center;
