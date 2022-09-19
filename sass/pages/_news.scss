@@ -55,6 +55,9 @@
             &:hover {
                 cursor: pointer;
                 box-shadow: $articlesPictureHoverBoxShadow;
+                & img:not(.articles__item__logo) {
+                    transform: scale(1.25);
+                }
             }
         }
         &__logo {

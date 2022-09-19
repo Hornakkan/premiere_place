@@ -582,6 +582,9 @@
   cursor: pointer;
   box-shadow: 5px 4px 0 rgba(241, 138, 135, 0.48), 9px 8px 0 rgba(241, 138, 135, 0.2);
 }
+.articles__item__picture:hover img:not(.articles__item__logo) {
+  transform: scale(1.25);
+}
 .articles__item__logo {
   width: 130px;
 }
@@ -703,7 +706,7 @@
   color: #FFFFFF;
 }
 .rdv__date {
-  height: 145px;
+  height: 140px;
   width: 135px;
   display: flex;
   flex-direction: column;
