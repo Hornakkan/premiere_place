@@ -1,59 +1,61 @@
-.carousel {
+#myCarousel {
     height: $carouselHeight;
-    &-inner {
-        height: 100%;
-        width: 88%;
-    }
-    &-item {
-        height: 100%;
-        background: $carouselBgColor;
-        color: $carouselTextColor;
-        position: relative;
-    }
-    &-control {
-        &-prev {
-            left: 15%;
-            bottom: 15%;
-            top: auto;
-            width: $carouselControlWidth;
-            height: $carouselControlHeight;
-            border-top-left-radius: $carouselControlRadius;
-            border-bottom-left-radius: $carouselControlRadius;
-            background-color: $carouselControlBgColor;
-            opacity: 1;
+    .carousel {
+        &-inner {
+            height: 100%;
+            width: 88%;
         }
-        &-next {
-            left: calc(15% + $carouselControlWidth - 1px);
-            bottom: 15%;
-            top: auto;
-            width: $carouselControlWidth;
-            height: $carouselControlHeight;
-            border-top-right-radius: $carouselControlRadius;
-            border-bottom-right-radius: $carouselControlRadius;
-            background-color: $carouselControlBgColor;
-            opacity: 1;
-            border-left: $carouselControlInnerBorder;
-        }        
-    }
-    &-indicators {
-        left: 8%;
-        bottom: 12%;
-        width: fit-content;
-        height: $carouselIndicatorsContainerHeight;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        & > li {
-            border-radius: $carouselIndicatorsRadius;
-            border: $carouselIndicatorsBorder;
-            width: $carouselIndicatorsWidth;
-            height: $carouselIndicatorsHeight;
-            cursor: pointer;
-            &.active {
-                background-color: $carouselIndicatorsActiveColor;
+        &-item {
+            height: 100%;
+            background: $carouselBgColor;
+            color: $carouselTextColor;
+            position: relative;
+        }
+        &-control {
+            &-prev {
+                left: 15%;
+                bottom: 15%;
+                top: auto;
+                width: $carouselControlWidth;
+                height: $carouselControlHeight;
+                border-top-left-radius: $carouselControlRadius;
+                border-bottom-left-radius: $carouselControlRadius;
+                background-color: $carouselControlBgColor;
+                opacity: 1;
             }
+            &-next {
+                left: calc(15% + $carouselControlWidth - 1px);
+                bottom: 15%;
+                top: auto;
+                width: $carouselControlWidth;
+                height: $carouselControlHeight;
+                border-top-right-radius: $carouselControlRadius;
+                border-bottom-right-radius: $carouselControlRadius;
+                background-color: $carouselControlBgColor;
+                opacity: 1;
+                border-left: $carouselControlInnerBorder;
+            }        
         }
-    }    
+        &-indicators {
+            left: 8%;
+            bottom: 12%;
+            width: fit-content;
+            height: $carouselIndicatorsContainerHeight;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            & > li {
+                border-radius: $carouselIndicatorsRadius;
+                border: $carouselIndicatorsBorder;
+                width: $carouselIndicatorsWidth;
+                height: $carouselIndicatorsHeight;
+                cursor: pointer;
+                &.active {
+                    background-color: $carouselIndicatorsActiveColor;
+                }
+            }
+        }    
+    }
 }
 
 .bi-chevron-left, .bi-chevron-right {

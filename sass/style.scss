@@ -2,10 +2,12 @@
 @import "./components/nav";
 @import "./components/carousel";
 @import "./components/skew";
+@import "./components/cardslider";
 @import "./pages/home";
 @import "./pages/services";
 @import "./pages/news";
 @import "./pages/message";
+@import "./pages/references";
 
 *, ::before, ::after {
     margin: 0;
