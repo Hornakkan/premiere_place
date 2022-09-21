@@ -18,29 +18,29 @@
             position: relative;
             &__wrapper {
                 position: absolute;
-                width: 82%;
+                width: $servicesContainerLeftWrapperWidth;
                 z-index: 5;
                 display: flex;
                 flex-direction: column;
                 border: $servicesContainerLeftWrapperBorder;
                 border-radius: $servicesContainerLeftWrapperRadius;
-                left: 180px;
-                top: -200px;
+                left: $servicesContainerLeftWrapperPosLeft;
+                top: $servicesContainerLeftWrapperPosTop;
                 min-height: $servicesContainerLeftWrapperHeight;
                 background-color: $servicesContainerLeftWrapperBgColor;
                 &--shadow {
                     content: '';
                     position: absolute;
                     z-index: 0;
-                    width: 87%;
+                    width: $servicesContainerLeftWrapperShadowWidth;
                     height: 0px;
-                    left: 154px;
-                    top: -180px;
+                    left: $servicesContainerLeftWrapperShadowPosLeft;
+                    top: $servicesContainerLeftWrapperShadowPosTop;
                     border-top-left-radius: $servicesContainerLeftWrapperRadius;
                     border-top-right-radius: $servicesContainerLeftWrapperRadius;
-                    border-top: 45vw solid rgba(0, 0, 0, 0.068);
-                    border-left: 30px solid transparent;
-                    border-right: 30px solid transparent;
+                    border-top: $servicesContainerLeftWrapperShadowBorderTop;
+                    border-left: $servicesContainerLeftWrapperShadowBorderLeft;
+                    border-right: $servicesContainerLeftWrapperShadowBorderRight;
                 }
                 &__content {
                     min-height: $servicesContainerLeftWrapperHeight;
@@ -141,6 +141,7 @@
                 font-size: $servicesContainerRightTitleFontSize;
                 color: $servicesContainerRightTitleFontColor;
                 font-weight: $servicesContainerRightTitleFontWeight;
+                padding: $servicesContainerRightTitlePadding;
                 width: 100%;
                 display: flex;
                 flex-wrap: wrap;

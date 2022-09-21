@@ -399,13 +399,13 @@
 }
 .services-container__left__wrapper {
   position: absolute;
-  width: 82%;
+  width: 80%;
   z-index: 5;
   display: flex;
   flex-direction: column;
   border: 5px solid #FFFFFF;
   border-radius: 25px;
-  left: 180px;
+  left: 20%;
   top: -200px;
   min-height: 900px;
   background-color: #FFFFFF;
@@ -414,9 +414,9 @@
   content: "";
   position: absolute;
   z-index: 0;
-  width: 87%;
+  width: 85%;
   height: 0px;
-  left: 154px;
+  left: 17.5%;
   top: -180px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
@@ -511,7 +511,7 @@
   width: 44%;
   min-height: 900px;
   position: relative;
-  padding: 0 15px;
+  padding: 0 20px;
   right: 0;
   top: 0;
 }
@@ -519,6 +519,7 @@
   font-size: 30px;
   color: #1b5393;
   font-weight: bold;
+  padding: 0 4%;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -872,9 +873,9 @@
   background-image: url(../ressources/fond-h2.jpg);
   background-position: top -40px left;
   background-repeat: no-repeat;
-  background-color: #333;
+  background-color: #F6F6F6;
   width: 100%;
-  height: 80vh;
+  min-height: 80vh;
 }
 .message__wrapper {
   padding: 6% 4%;
