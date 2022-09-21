@@ -1,0 +1,29 @@
+#cardSlider {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &Inner {
+        height: 25vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &-item {
+        height: 100%;
+        display: block;
+        width: calc(100%/6);
+        // flex: 0 0 calc(100%/6);
+    }
+    &-control {
+        &-prev {
+            width: 2%;
+        }
+        &-next {
+            width: 2%;
+        }
+    }
+}
