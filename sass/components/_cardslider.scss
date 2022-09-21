@@ -7,23 +7,32 @@
     justify-content: center;
     align-items: center;
     &Inner {
-        height: 25vh;
+        width: 80%;
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: space-evenly;
     }
-    &-item {
+    &Item {
         height: 100%;
-        display: block;
-        width: calc(100%/6);
-        // flex: 0 0 calc(100%/6);
-    }
-    &-control {
-        &-prev {
-            width: 2%;
+        display: flex;
+        justify-content: center;
+        width: calc(100%/8);
+        &:hover {
+            cursor: pointer;
+            background-color: red;
         }
-        &-next {
-            width: 2%;
+    }
+    &Prev {
+        width: 2%;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &Next {
+        width: 2%;
+        &:hover {
+            cursor: pointer;
         }
     }
 }
