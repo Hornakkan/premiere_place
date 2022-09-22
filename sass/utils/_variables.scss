@@ -304,6 +304,15 @@ $referencesTitleFontColor: $blue;
 $referencesTitleFontWeight: bold;
 $referencesTitleMargin: 50px;
 
+// references plus symbol
+$plusWrapperFontSize: 18px;
+$plusWrapperRadius: 50%;
+$plusWrapperWidth: 32px;
+$plusWrapperHeight: 32px;
+$plusWrapperBorder: 2px solid $white;
+$plusWrapperBgColor: #E1E8F0;
+$plusWrapperFontColor: $blue;
+
 // card slider
 $cardSliderHeight: auto;
 $cardSliderWidth: 100%;
@@ -311,6 +320,9 @@ $cardSliderMargin: 0 auto;
 $cardSliderInnerWidth: 80%;
 $cardSliderItemHeight: 140px;
 $cardSliderItemWidth: 210px;
+$cardSliderItemBorderHover: 2px solid #1b53932f;
+$cardSliderItemRadiusHover: 20px;
+$cardSliderItemTransformHover: scale(1.1);
 $cardSliderBtnWidth: 45px;
 $cardSliderBtnHeight: 45px;
 $cardSliderBtnBgColor: #F6F6F6;

@@ -19,13 +19,13 @@
         position: relative;
         & .plusWrapper {
             display: none;
-            font-size: 18px;
-            border-radius: 50%;
-            width: 32px;
-            height: 32px;
-            border: 2px solid $white;
-            background-color: #E1E8F0;
-            color: $blue;
+            font-size: $plusWrapperFontSize;
+            border-radius: $plusWrapperRadius;
+            width: $plusWrapperWidth;
+            height: $plusWrapperHeight;
+            border: $plusWrapperBorder;
+            background-color: $plusWrapperBgColor;
+            color: $plusWrapperFontColor;
         }
         & img {
             height: fit-content;
@@ -36,10 +36,10 @@
         align-items: center;
         &:hover {
             cursor: pointer;
-            border: 2px solid #1b53932f;
-            border-radius: 20px;
+            border: $cardSliderItemBorderHover;
+            border-radius: $cardSliderItemRadiusHover;
             & img {
-                transform: scale(1.1);
+                transform: $cardSliderItemTransformHover;
             }
             & .plusWrapper {
                 position: absolute;
