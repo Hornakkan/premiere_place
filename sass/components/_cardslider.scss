@@ -63,6 +63,8 @@
         }
         &:hover {
             cursor: pointer;
+            background-color: $plusWrapperBgColor;
+            color: lighten($cardSliderBtnFontColor, 20%);
         }
         &:focus {
             outline: none;
@@ -80,6 +82,8 @@
         }
         &:hover {
             cursor: pointer;
+            background-color: $plusWrapperBgColor;
+            color: lighten($cardSliderBtnFontColor, 20%);            
         }
         &:focus {
             outline: none;

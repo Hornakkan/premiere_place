@@ -401,6 +401,8 @@
 }
 #cardSliderPrev:hover {
   cursor: pointer;
+  background-color: #E1E8F0;
+  color: #3985db;
 }
 #cardSliderPrev:focus {
   outline: none;
@@ -418,6 +420,8 @@
 }
 #cardSliderNext:hover {
   cursor: pointer;
+  background-color: #E1E8F0;
+  color: #3985db;
 }
 #cardSliderNext:focus {
   outline: none;
@@ -982,7 +986,7 @@
 }
 
 .references {
-  height: 60vh;
+  height: 50vh;
   width: 100%;
   background-color: #FFFFFF;
 }
@@ -1010,6 +1014,10 @@ body {
   background-repeat: no-repeat;
   width: 100vw;
   overflow-x: hidden;
+}
+
+footer {
+  background-image: url(../ressources/fond-footer.jpg);
 }
 
 /*# sourceMappingURL=style.css.map */
