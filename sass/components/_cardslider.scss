@@ -2,6 +2,7 @@
     height: $cardSliderHeight;
     width: $cardSliderWidth;
     margin: $cardSliderMargin;
+    overflow-x: hidden;
     display: flex;
     flex-direction: row;
     justify-content: center;

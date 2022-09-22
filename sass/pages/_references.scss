@@ -2,6 +2,9 @@
     height: $referencesHeight;
     width: $referencesWidth;
     background-color: $referencesBgColor;
+    &__slider {
+        height: $referencesSliderHeight;
+    }
     &__title {
         font-size: $referencesTitleFontSize;
         font-weight: $referencesTitleFontWeight;

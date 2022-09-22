@@ -335,9 +335,10 @@
 }
 
 #cardSlider {
-  height: auto;
+  height: 100%;
   width: 100%;
   margin: 0 auto;
+  overflow-x: hidden;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -989,6 +990,9 @@
   height: 50vh;
   width: 100%;
   background-color: #FFFFFF;
+}
+.references__slider {
+  height: 210px;
 }
 .references__title {
   font-size: 1.9em;

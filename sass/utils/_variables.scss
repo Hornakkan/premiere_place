@@ -299,6 +299,7 @@ $messageImageLeft: -80px;
 $referencesHeight: 50vh;
 $referencesWidth: 100%;
 $referencesBgColor: $white;
+$referencesSliderHeight: 210px;
 $referencesTitleFontSize: 1.9em;
 $referencesTitleFontColor: $blue;
 $referencesTitleFontWeight: bold;
@@ -314,7 +315,7 @@ $plusWrapperBgColor: #E1E8F0;
 $plusWrapperFontColor: $blue;
 
 // card slider
-$cardSliderHeight: auto;
+$cardSliderHeight: 100%;
 $cardSliderWidth: 100%;
 $cardSliderMargin: 0 auto;
 $cardSliderInnerWidth: 80%;
