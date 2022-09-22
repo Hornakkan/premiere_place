@@ -8,6 +8,7 @@
 @import "./pages/news";
 @import "./pages/message";
 @import "./pages/references";
+@import "./pages/footer";
 
 *, ::before, ::after {
     margin: 0;
@@ -23,8 +24,4 @@ body {
     background-repeat: no-repeat;
     width: 100vw;
     overflow-x: hidden;
-}
-
-footer {
-    background-image: url(../ressources/fond-footer.jpg);
 }
