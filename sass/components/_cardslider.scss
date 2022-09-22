@@ -1,38 +1,88 @@
 #cardSlider {
-    height: auto;
-    width: 100%;
-    margin: 0 auto;
+    height: $cardSliderHeight;
+    width: $cardSliderWidth;
+    margin: $cardSliderMargin;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     &Inner {
-        width: 80%;
+        width: $cardSliderInnerWidth;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
     }
     &Item {
-        height: 100%;
+        height: $cardSliderItemHeight;
+        width: $cardSliderItemWidth;
+        position: relative;
+        & .plusWrapper {
+            display: none;
+            font-size: 18px;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            border: 2px solid $white;
+            background-color: #E1E8F0;
+            color: $blue;
+        }
+        & img {
+            height: fit-content;
+            width: fit-content;
+        }
         display: flex;
         justify-content: center;
-        width: calc(100%/8);
+        align-items: center;
         &:hover {
             cursor: pointer;
-            background-color: red;
+            border: 2px solid #1b53932f;
+            border-radius: 20px;
+            & img {
+                transform: scale(1.1);
+            }
+            & .plusWrapper {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                bottom: 0;
+                transform: translateY(50%);
+            }
         }
     }
     &Prev {
-        width: 2%;
+        width: $cardSliderBtnWidth;
+        height: $cardSliderBtnHeight;
+        background-color: $cardSliderBtnBgColor;
+        border: $cardSliderBtnBorder;
+        border-radius: $cardSliderBtnRadius;
+        color: $cardSliderBtnFontColor;
+        & i {
+            font-size: $cardSliderBtnFontSize;
+        }
         &:hover {
             cursor: pointer;
         }
+        &:focus {
+            outline: none;
+        }
     }
     &Next {
-        width: 2%;
+        width: $cardSliderBtnWidth;
+        height: $cardSliderBtnHeight;
+        background-color: $cardSliderBtnBgColor;
+        border: $cardSliderBtnBorder;
+        border-radius: $cardSliderBtnRadius;
+        color: $cardSliderBtnFontColor;
+        & i {
+            font-size: $cardSliderBtnFontSize;
+        }
         &:hover {
             cursor: pointer;
+        }
+        &:focus {
+            outline: none;
         }
     }
 }

@@ -1,4 +1,14 @@
 .references {
-    height: 60vh;
-    background-color: $white;
+    height: $referencesHeight;
+    width: $referencesWidth;
+    background-color: $referencesBgColor;
+    &__title {
+        font-size: $referencesTitleFontSize;
+        font-weight: $referencesTitleFontWeight;
+        color: $referencesTitleFontColor;
+        margin-bottom: $referencesTitleMargin;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 }
