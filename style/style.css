@@ -662,7 +662,7 @@
   text-align: center;
 }
 .articles__item__picture {
-  height: 55%;
+  height: 50%;
   border-radius: 60px;
   overflow: hidden;
   background-color: #E9EEF4;
@@ -764,7 +764,7 @@
 .rdv__title {
   width: 100%;
   display: flex;
-  justify-content: center;
+  padding-left: 23.5%;
   font-size: 1.8em;
   color: #1b5393;
   font-weight: bold;
@@ -1042,7 +1042,7 @@ footer .footer__address span {
 }
 footer .footer__menu {
   width: auto;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;

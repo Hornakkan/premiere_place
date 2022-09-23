@@ -144,7 +144,8 @@
     &__title {
         width: 100%;
         display: flex;
-        justify-content: center;
+        // justify-content: center;
+        padding-left: $rdvTitlePadding;
         font-size: $rdvTitleFontSize;
         color: $rdvTitleFontColor;
         font-weight: $rdvTitleFontWeight;

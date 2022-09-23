@@ -34,7 +34,7 @@ footer {
         }
         &__menu {
             width: $footerMenuWidth;
-            height: $footerMenuHeight;
+            min-height: $footerMenuHeight;
             display: flex;
             flex-direction: column;
             justify-content: center;
