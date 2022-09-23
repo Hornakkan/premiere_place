@@ -1,23 +1,25 @@
 footer {
-    background-image: url(../ressources/fond-footer.jpg);
+    background: $footerBg;
     & .footer {
-        height: 420px;
+        height: $footerHeight;
         display: flex;
         flex-direction: row;
-        padding: 0 150px;
+        padding: $footerPadding;
+        color: $blackOpacity70;
         &__left {
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: left;
-            width: 40%;
+            width: $footerLeftWidth;
+            height: $footerLeftHeight;
         }
         &__address {
-            width: 35%;
+            width: $footerAddressWidth;
+            height: $footerAddressHeight;
             display: flex;
             flex-direction: column;
-            justify-content:left;
-            align-items: center;
+            justify-content: center;
+            padding: $footerAddressPadding;
             & p {
                 width: 100%;
                 margin: 0;
@@ -27,53 +29,77 @@ footer {
             & span {
                 width: 100%;
                 text-align: left;
+                font-weight: $footerAddressTitleFontWeight;
             }
         }
         &__menu {
-            width: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        &__center {
-            width: 20%;
+            width: $footerMenuWidth;
+            height: $footerMenuHeight;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            margin: $footerMenuMargin;
+            padding: $footerMenuPadding;
+            & ul {
+                margin: $footerMenuListMargin;
+                & > li {
+                    margin-bottom: $footerMenuListItemMargin;
+                    text-decoration: $footerMenuListTextDecoration;
+                    color: $footerMenuListFontColor;
+                    font-weight: $footerMenuListFontWeight;
+                    &:hover {
+                        cursor: pointer;
+                        text-decoration: $footerMenuListTextDecorationHover;
+                        color: $footerMenuListFontColorHover;
+                    }
+                }
+            }
+        }
+        &__center {
+            width: $footerCenterWidth;
+            height: $footerCenterHeight;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         &__logo {
             display: flex;
             justify-content: center;
             position: relative;
-            top: -20px;
+            margin-bottom: $footerLogoMargin;
         }
         &__slogan {
-            padding: 0 60px;
+            padding: $footerSloganPadding;
         }
         &__right {
-            width: 40%;
-            height: 100%;
+            width: $footerRightWidth;
+            height: $footerRightHeight;
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center;
         }
         &__seo {
-            width: 100%;
-            padding: 0 50px 0 100px;
-            font-size: 0.95em;
+            width: $footerSeoWidth;
+            padding: $footerSeoPadding;
+            font-size: $footerSeoFontSize;
+            &__title {
+                font-weight: $footerSeoTitleFontWeight;
+            }
             & p {
                 margin: 0;
             }
         }
     }
     & .copyrigths {
-        height: 100px;
-        width: 100%;
+        height: $copyrigthsHeight;
+        width: $copyrigthsWidth;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #F6F6F6;
+        flex-grow: 1;
+        background-color: $copyrigthsBgColor;
+        color: $copyrigthsFontColor;
+        font-size: $copyrigthsFontSize;
     }
 }
