@@ -1126,4 +1126,68 @@ body {
   overflow-x: hidden;
 }
 
+@media screen and (max-width: 1100px) {
+  #myCarousel .carousel-indicators {
+    left: 12%;
+  }
+}
+@media screen and (max-width: 950px) {
+  #myCarousel .carousel-indicators {
+    left: 15%;
+  }
+  .services-container {
+    flex-direction: column;
+  }
+  .services-container__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+  }
+  .services-container__left__wrapper--shadow {
+    left: auto;
+  }
+  .services-container__left__wrapper {
+    left: auto;
+  }
+  .services-container__right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .services-container__right__title {
+    justify-content: center;
+  }
+  .services-container__right__services {
+    align-items: center;
+  }
+  .news__wrapper {
+    flex-direction: column;
+  }
+  .articles {
+    width: 100%;
+  }
+  .rdv {
+    width: 100%;
+    margin: 15% auto;
+  }
+  .rdv__wrapper {
+    padding: 0;
+  }
+  .message__wrapper {
+    flex-direction: column;
+  }
+  .message__left {
+    width: 100%;
+    margin: 5% auto;
+  }
+  .message__right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
