@@ -1169,6 +1169,9 @@ body {
   .articles {
     width: 100%;
   }
+  .articles__btn__container {
+    margin: 15% auto;
+  }
   .rdv {
     width: 100%;
     margin: 15% auto;
@@ -1181,7 +1184,7 @@ body {
   }
   .message__left {
     width: 100%;
-    margin: 5% auto;
+    margin: 15% auto;
   }
   .message__right {
     width: 100%;
