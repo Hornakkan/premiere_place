@@ -317,7 +317,6 @@
 .skew-left {
   background-color: #FFFFFF;
   min-height: 110px;
-  width: 150%;
   position: relative;
   z-index: 0;
   transform: rotate(3deg);
@@ -327,7 +326,6 @@
 .skew-right {
   background-color: #FFFFFF;
   min-height: 110px;
-  width: 200%;
   position: relative;
   z-index: 0;
   transform: rotate(-1deg);
