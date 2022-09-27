@@ -1125,6 +1125,7 @@ body {
   font-family: "Open Sans";
   background-image: url(../ressources/cigogne.jpg);
   background-repeat: no-repeat;
+  background-position: top;
   width: 100vw;
   overflow-x: hidden;
 }
