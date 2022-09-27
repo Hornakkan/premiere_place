@@ -241,6 +241,27 @@
         height: 165vh;
     }
 }
+@media screen and (max-width: 500px) {
+    .message__right__image {
+        & img {
+            left: -30vw;
+        }
+    }
+}
+@media screen and (max-width: 450px) {
+    .message__right__image {
+        & img {
+            left: -40vw;
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .message__right__image {
+        & img {
+            left: -50vw;
+        }
+    }
+}
 @media screen and (max-width: 360px) {
     footer .footer {
         flex-direction: column;
@@ -256,5 +277,10 @@
         &__seo {
             padding: 25px 0;
         }
-    }  
+    }
+    .message__right__image {
+        & img {
+            left: -70vw;
+        }
+    }
 }
