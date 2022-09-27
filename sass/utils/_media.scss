@@ -223,11 +223,38 @@
 }
 @media screen and (max-width: 550px) {
     .services-container__left {
-        height: 140vh;
+        height: 145vh;
+        &__wrapper {
+            &__content {
+                padding: 1%;
+            }
+        }
     }
     .articles__wrapper {
         flex-direction: column;
         width: 100%;
         align-items: center;
     }
+}
+@media screen and (max-height: 667px) {
+    .services-container__left {
+        height: 165vh;
+    }
+}
+@media screen and (max-width: 360px) {
+    footer .footer {
+        flex-direction: column;
+        &__left {
+            width: auto;
+        }
+        &__center {
+            width: auto;
+        }
+        &__right {
+            width: auto;
+        }
+        &__seo {
+            padding: 25px 0;
+        }
+    }  
 }
